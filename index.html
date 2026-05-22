@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CLASSROOM UNIFORM PVT LTD - STITCHING DETAILS</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:'Poppins',sans-serif
+}
+
+body{
+background:linear-gradient(135deg,#e0f2fe,#f8fafc,#dbeafe);
+color:#0f172a;
+min-height:100vh
+}
+
+header{
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+padding:22px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:100;
+box-shadow:0 8px 25px rgba(0,0,0,.25)
+}
+
+header h1{
+font-size:30px;
+font-family:'Orbitron',sans-serif;
+font-weight:800;
+letter-spacing:1px;
+background:linear-gradient(90deg,#fff,#93c5fd);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent
+}
+
+header p{
+margin-top:8px;
+font-size:13px;
+letter-spacing:8px;
+color:#cbd5e1;
+font-weight:600
+}
+
+.container{
+max-width:1350px;
+margin:auto;
+padding:16px
+}
+
+.card{
+background:rgba(255,255,255,.92);
+border-radius:24px;
+padding:18px;
+margin-bottom:16px;
+border:1px solid rgba(255,255,255,.4);
+box-shadow:0 10px 35px rgba(15,23,42,.12);
+backdrop-filter:blur(10px)
+}
+
+.admin-panel{
+border:2px solid #1e293b;
+background:linear-gradient(145deg,#ffffff,#eff6ff)
+}
+
+h2{
+font-size:32px;
+font-weight:800;
+margin-bottom:16px;
+color:#020617
+}
+
+label{
+font-size:13px;
+font-weight:700;
+margin-bottom:6px;
+display:block;
+color:#334155
+}
+
+input,select,textarea{
+width:100%;
+padding:14px;
+border-radius:16px;
+border:2px solid #dbeafe;
+background:#fff;
+font-size:15px;
+font-weight:600;
+transition:.25s ease;
+color:#0f172a
+}
+
+input:focus,select:focus,textarea:focus{
+outline:none;
+border-color:#2563eb;
+box-shadow:0 0 0 5px rgba(37,99,235,.12);
+transform:translateY(-1px)
+}
+
+button{
+border:none;
+border-radius:16px;
+padding:14px;
+font-weight:800;
+cursor:pointer;
+font-size:16px;
+transition:.25s ease;
+box-shadow:0 6px 16px rgba(0,0,0,.12)
+}
+
+button:hover{
+transform:translateY(-2px) scale(1.01)
+}
+
+.btn-dark{
+background:linear-gradient(135deg,#020617,#1e3a8a);
+color:#fff
+}
+
+.btn-green{
+background:linear-gradient(135deg,#15803d,#22c55e);
+color:#fff
+}
+
+.btn-blue{
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+color:#fff
+}
+
+.btn-red{
+background:linear-gradient(135deg,#fee2e2,#fecaca);
+color:#b91c1c
+}
+
+.summary{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-bottom:16px
+}
+
+.summary div{
+background:linear-gradient(145deg,#fff,#eff6ff);
+padding:18px;
+border-radius:20px;
+border:1px solid #dbeafe;
+box-shadow:0 6px 18px rgba(0,0,0,.08)
+}
+
+.summary p{
+font-size:14px;
+font-weight:700;
+color:#64748b
+}
+
+.summary h3{
+font-size:34px;
+margin-top:8px;
+font-weight:900;
+color:#0f172a
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px
+}
+
+.sizes{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:10px;
+margin-top:12px
+}
+
+.actions{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px
+}
+
+.role-badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:999px;
+font-weight:900;
+font-size:14px;
+letter-spacing:.5px
+}
+
+.admin-badge{
+background:linear-gradient(135deg,#dcfce7,#bbf7d0);
+color:#15803d
+}
+
+.client-badge{
+background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+color:#1d4ed8
+}
+
+.client-note{
+background:linear-gradient(135deg,#dbeafe,#e0f2fe);
+padding:14px;
+border-radius:18px;
+font-weight:700;
+color:#075985;
+margin-bottom:14px
+}
+
+.table-wrap{
+overflow-x:auto;
+border-radius:20px
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#fff;
+overflow:hidden
+}
+
+th{
+background:linear-gradient(135deg,#020617,#1e293b);
+color:#fff;
+padding:14px;
+font-size:13px;
+text-align:left
+}
+
+td{
+padding:10px;
+border-bottom:1px solid #e2e8f0;
+font-size:13px;
+font-weight:600
+}
+
+.badge{
+padding:6px 12px;
+border-radius:999px;
+font-size:12px;
+font-weight:900;
+display:inline-block
+}
+
+.out,.yes,.ok{
+background:#dcfce7;
+color:#15803d
+}
+
+.hold,.no,.short{
+background:#fee2e2;
+color:#b91c1c
+}
+
+.pending{
+background:#fef3c7;
+color:#b45309
+}
+
+.extra{
+background:#dbeafe;
+color:#1d4ed8
+}
+
+.mobile-card{
+background:#fff;
+padding:14px;
+border-radius:18px;
+margin-bottom:10px;
+box-shadow:0 6px 16px rgba(0,0,0,.08)
+}
+
+.sync-status{
+position:fixed;
+bottom:12px;
+right:12px;
+background:linear-gradient(135deg,#020617,#1e293b);
+color:#fff;
+padding:10px 16px;
+border-radius:999px;
+font-size:12px;
+font-weight:800;
+z-index:9999;
+box-shadow:0 6px 18px rgba(0,0,0,.25)
+}
+
+.photo-preview{
+margin-top:8px;
+max-width:170px;
+max-height:170px;
+border-radius:16px;
+border:2px solid #dbeafe;
+display:none
+}
+
+.photo-modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.85);
+z-index:9999;
+padding:20px;
+align-items:center;
+justify-content:center
+}
+
+.photo-modal img{
+max-width:95vw;
+max-height:85vh;
+border-radius:20px;
+border:4px solid #fff
+}
+
+.photo-modal button{
+position:fixed;
+top:16px;
+right:16px
+}
+
+.desc-box{
+background:#f8fafc;
+border:2px dashed #cbd5e1;
+padding:12px;
+border-radius:18px;
+margin-top:10px
+}
+
+.desc-row{
+display:grid;
+grid-template-columns:1.2fr 1fr 2fr auto;
+gap:10px;
+margin-bottom:10px
+}
+
+.empty{
+padding:40px;
+text-align:center;
+font-weight:700;
+color:#64748b
+}
+
+@media(max-width:768px){
+header h1{
+font-size:22px
+}
+
+header p{
+letter-spacing:4px
+}
+
+.grid{
+grid-template-columns:1fr
+}
+
+.sizes{
+grid-template-columns:repeat(3,1fr)
+}
+
+.summary{
+grid-template-columns:1fr 1fr
+}
+
+.actions{
+grid-template-columns:1fr 1fr
+}
+
+.desc-row{
+grid-template-columns:1fr
+}
+
+.role-row{
+grid-template-columns:1fr!important
+}
+
+.table-wrap.main-table{
+display:none
+}
+
+.mobile-list{
+display:block
+}
+}
+</style>
+</head>
+<body>
+<header><h1>CLASSROOM UNIFORM PVT LTD</h1><p>STITCHING DETAILS</p></header>
+
+<div id="photoModal" class="photo-modal" onclick="closePhotoModal()">
+<button type="button" onclick="closePhotoModal()">Close</button>
+<img id="modalPhoto" src="" alt="Uploaded photo">
+</div>
+<div id="syncStatus" class="sync-status">Connecting...</div>
+
+<div class="container">
+<div class="card admin-panel">
+<h2>Admin Panel</h2>
+<div class="role-row">
+<div><label>Admin Password</label><input type="password" id="adminPass" placeholder="Admin password"></div>
+<button type="button" class="btn-dark" onclick="adminLogin()">Admin Login</button>
+<button type="button" class="btn-red" onclick="adminLogout()">Client Mode</button>
+</div>
+<p class="small-note">Client mode me entry, edit, delete aur clear all locked rahega.</p>
+<div style="margin-top:10px"><span id="roleBadge" class="role-badge client-badge">CLIENT VIEW ONLY</span></div>
+</div>
+
+<div id="clientNote" class="client-note">Client view: aap sirf entries dekh sakte ho, filter/report/CSV/share kar sakte ho.</div>
+
+<div class="card admin-only">
+<h2 id="formTitle">New Stitching Entry</h2>
+<form id="entryForm">
+<div class="grid">
+<div><label>Date</label><input type="date" id="date"></div>
+<div><label>Karigar</label><select id="karigar"><option value="">Select</option></select></div>
+<div><label>Lot No</label><input id="lotNo" placeholder="S-100"></div>
+<div><label>TC No</label><input id="tcNo"></div>
+<div><label>Item</label><input id="item" placeholder="Shirt / Pant"></div>
+<div><label>Brand</label><select id="brand"><option>C/L</option><option>P/A</option></select></div>
+<div><label>Material</label><select id="material"><option>CLEAR</option><option>PENDING</option><option>NOT NEED</option></select></div>
+<div><label>Out Date</label><input type="date" id="outDate"></div>
+<div><label>EDOA</label><input type="date" id="edoa"></div>
+<div><label>Status</label><select id="status"><option>OUT</option><option>HOLD</option></select></div>
+<div><label>Mall Received</label><select id="mallReceived"><option>PENDING</option><option>YES</option><option>NO</option></select></div>
+<div><label>Received Date</label><input type="date" id="receivedDate"></div>
+<div><label>Total Qty</label><input id="totalQty" readonly></div>
+<div><label>Sent Qty</label><input id="sentQty" readonly></div>
+<div><label>Received Qty</label><input type="number" min="0" id="receivedQty" oninput="calcQtyDiff()"></div>
+<div><label>Qty Difference</label><input id="qtyDiff" readonly></div>
+<div><label>Photo 1 Upload</label><input type="file" id="photo1" accept="image/*"><img id="photoPreview1" class="photo-preview"></div>
+<div><label>Photo 2 Upload</label><input type="file" id="photo2" accept="image/*"><img id="photoPreview2" class="photo-preview"></div>
+<div><label>Remarks</label><input id="remarks"></div>
+</div>
+
+<div style="margin-top:10px">
+<label>Item Description</label>
+<div class="desc-box">
+<div class="desc-row desc-head"><div>Heading</div><div>Status</div><div>Extra Detail</div><div>Action</div></div>
+<div id="descriptionRows"></div>
+<button type="button" class="btn-blue" onclick="addDescriptionRow()">+ Add Description</button>
+</div>
+</div>
+
+<h3 style="margin-top:12px">Size-wise Quantity</h3>
+<div class="sizes" id="sizeInputs"></div>
+<button class="btn-main" type="submit" id="submitBtn">Add Entry</button>
+</form>
+</div>
+
+<div class="summary">
+<div><p>Total Entries</p><h3 id="totalEntries">0</h3></div>
+<div><p>Total Quantity</p><h3 id="grandTotal">0</h3></div>
+<div><p>OUT Qty</p><h3 id="outQty">0</h3></div>
+<div><p>HOLD Qty</p><h3 id="holdQty">0</h3></div>
+</div>
+
+<div class="card">
+<h2>All Entries Filter</h2>
+<div class="actions">
+<input id="search" placeholder="Search lot, TC, karigar...">
+<select id="filterKarigar"><option value="ALL">All Karigar</option></select>
+<select id="filterStatus"><option value="ALL">All Status</option><option>OUT</option><option>HOLD</option></select>
+<input type="date" id="filterFrom">
+<input type="date" id="filterTo">
+<button class="btn-green" onclick="shareAllReport()" type="button">Share All</button>
+<button class="btn-blue" onclick="downloadCSV()" type="button">CSV Download</button>
+<button class="btn-red admin-only" onclick="clearAll()" type="button">Clear All</button>
+</div>
+</div>
+
+<div class="card">
+<h2>All Entries</h2>
+<div class="table-wrap main-table"><table><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table></div>
+<div class="mobile-list" id="mobileList"></div>
+<div class="empty" id="emptyMsg">Abhi koi stitching entry nahi hai.</div>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCGMtokh5Ur6dceRl1fR0gSQbGT69yocB4",
+  authDomain: "stitching-details-app.firebaseapp.com",
+  projectId: "stitching-details-app",
+  storageBucket: "stitching-details-app.appspot.com",
+  messagingSenderId: "882044319583",
+  appId: "1:882044319583:web:1ec344295f2fc5dbbc28ea",
+  measurementId: "G-D8JPJF5265"
+};
+
+firebase.initializeApp(firebaseConfig);
+firebase.firestore().settings({
+  experimentalAutoDetectLongPolling:true
+});
+
+var db = firebase.firestore();
+var recordsRef = db.collection("stitchingRecords");
+
+var karigars = ["Regent","NCPAL","Barasat","Halim","Sarif","Milan","Kamrul","Bapi","Manjrul"];
+var sizes = [10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50];
+var records = [];
+var editId = null;
+var isAdmin = false;
+var ADMIN_PASSWORD = "1234";
+var currentPhotos = ["",""];
+var descHeadings = ["COLLAR","BAND","SLEEVE","CUFF","BOX","PATTI","PLACKET","POCKET","PIPING","MATCHING","EMBROIDERY","PRINT","PATCH","BADGE","LABEL","REMARK"];
+var descStatuses = ["","YES","NO","PENDING","DONE","NOT NEED"];
+
+function el(id){return document.getElementById(id);}
+function clean(v){return String(v || "").trim();}
+function esc(v){return String(v == null || v === "" ? "-" : v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function todayStr(){return new Date().toISOString().slice(0,10);}
+function setSyncStatus(msg){el("syncStatus").innerText = msg;}
+
+function adminLogin(){
+  var pass = el("adminPass").value;
+  if(pass === ADMIN_PASSWORD){
+    isAdmin = true;
+    localStorage.setItem("stitchingAdmin","YES");
+    updateRoleUI();
+    alert("Admin login successful");
+  } else {
+    alert("Wrong admin password");
+  }
+}
+function adminLogout(){
+  isAdmin = false;
+  localStorage.removeItem("stitchingAdmin");
+  updateRoleUI();
+}
+function updateRoleUI(){
+  document.querySelectorAll(".admin-only").forEach(function(x){x.style.display = isAdmin ? "block" : "none";});
+  if(isAdmin){
+    el("roleBadge").innerText = "ADMIN MODE";
+    el("roleBadge").className = "role-badge admin-badge";
+    el("clientNote").style.display = "none";
+  } else {
+    el("roleBadge").innerText = "CLIENT VIEW ONLY";
+    el("roleBadge").className = "role-badge client-badge";
+    el("clientNote").style.display = "block";
+  }
+  render();
+}
+
+function descOptions(selected){
+  var html = "<option value=''>Select Heading</option>";
+  descHeadings.forEach(function(h){html += "<option" + (h===selected ? " selected" : "") + ">" + h + "</option>";});
+  return html;
+}
+function statusOptions(selected){
+  var html = "";
+  descStatuses.forEach(function(s){html += "<option value='" + s + "'" + (s===selected ? " selected" : "") + ">" + (s || "Select") + "</option>";});
+  return html;
+}
+function addDescriptionRow(data){
+  data = data || {};
+  var row = document.createElement("div");
+  row.className = "desc-row";
+  row.innerHTML = "<select class='desc-heading'>" + descOptions(data.heading || "") + "</select><select class='desc-status'>" + statusOptions(data.status || "") + "</select><input class='desc-detail' placeholder='Extra detail' value='" + esc(data.detail || "") + "'><button type='button' class='btn-red' onclick='this.parentNode.remove()'>Remove</button>";
+  el("descriptionRows").appendChild(row);
+}
+function renderDescriptions(list){
+  el("descriptionRows").innerHTML = "";
+  if(list && list.length){list.forEach(addDescriptionRow);} else {addDescriptionRow();}
+}
+function getDescriptions(){
+  var arr = [];
+  document.querySelectorAll("#descriptionRows .desc-row").forEach(function(r){
+    var h = r.querySelector(".desc-heading").value;
+    var s = r.querySelector(".desc-status").value;
+    var d = clean(r.querySelector(".desc-detail").value);
+    if(h || s || d){arr.push({heading:h,status:s,detail:d});}
+  });
+  return arr;
+}
+function descText(arr){
+  if(!arr || !arr.length) return "";
+  return arr.map(function(x){
+    var t = x.heading || "";
+    if(x.status) t += (t ? ": " : "") + x.status;
+    if(x.detail) t += (t ? " - " : "") + x.detail;
+    return t;
+  }).join("; ");
+}
+
+function calcTotal(){
+  var total = 0;
+  sizes.forEach(function(s){total += Number(el("size"+s).value) || 0;});
+  el("totalQty").value = total;
+  el("sentQty").value = total;
+  calcQtyDiff();
+}
+function calcQtyDiff(){
+  var sent = Number(el("sentQty").value) || 0;
+  var rec = Number(el("receivedQty").value) || 0;
+  el("qtyDiff").value = rec ? (rec - sent) : "";
+}
+function handlePhoto(e,index){
+  var file = e.target.files[0];
+  if(!file) return;
+  if(!file.type.match("image.*")){alert("Sirf image upload karo."); e.target.value = ""; return;}
+  var reader = new FileReader();
+  reader.onload = function(ev){
+    var img = new Image();
+    img.onload = function(){
+      var max = 800, w = img.width, h = img.height;
+      if(w > h && w > max){h = Math.round(h * max / w); w = max;}
+      if(h >= w && h > max){w = Math.round(w * max / h); h = max;}
+      var canvas = document.createElement("canvas");
+      canvas.width = w; canvas.height = h;
+      canvas.getContext("2d").drawImage(img,0,0,w,h);
+      currentPhotos[index] = canvas.toDataURL("image/jpeg",0.65);
+      var prev = el(index===0 ? "photoPreview1" : "photoPreview2");
+      prev.src = currentPhotos[index]; prev.style.display = "block";
+    };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+function openPhoto(src){if(src){el("modalPhoto").src = src; el("photoModal").style.display = "flex";}}
+function closePhotoModal(){el("photoModal").style.display = "none";}
+
+function badge(text){
+  var c = String(text || "").toLowerCase();
+  var cls = c.includes("out") || c.includes("yes") || c.includes("clear") ? "out" : c.includes("hold") || c.includes("no") ? "hold" : "pending";
+  return "<span class='badge " + cls + "'>" + esc(text) + "</span>";
+}
+function diffBadge(v){
+  if(v === "" || v == null) return "-";
+  var n = Number(v) || 0;
+  if(n === 0) return "<span class='badge ok'>FULL</span>";
+  if(n < 0) return "<span class='badge short'>" + Math.abs(n) + " SHORT</span>";
+  return "<span class='badge extra'>" + n + " EXTRA</span>";
+}
+
+function init(){
+  karigars.forEach(function(k){
+    el("karigar").innerHTML += "<option>" + k + "</option>";
+    el("filterKarigar").innerHTML += "<option>" + k + "</option>";
+  });
+  sizes.forEach(function(s){
+    el("sizeInputs").innerHTML += "<div><label>" + s + "</label><input type='number' min='0' id='size" + s + "' oninput='calcTotal()'></div>";
+  });
+  var headers = ["Date","Karigar","Lot","TC","Item","Brand"].concat(sizes).concat(["Total","Material","Out Date","EDOA","Status","Received","Rec Date","Sent","Rec Qty","Diff","Photo","Action"]);
+  el("tableHead").innerHTML = "<tr>" + headers.map(function(h){return "<th>"+h+"</th>";}).join("") + "</tr>";
+  el("entryForm").addEventListener("submit",saveEntry);
+  ["search","filterKarigar","filterStatus","filterFrom","filterTo"].forEach(function(id){el(id).addEventListener("input",render); el(id).addEventListener("change",render);});
+  el("photo1").addEventListener("change",function(e){handlePhoto(e,0);});
+  el("photo2").addEventListener("change",function(e){handlePhoto(e,1);});
+  el("date").value = todayStr();
+  renderDescriptions();
+  isAdmin = localStorage.getItem("stitchingAdmin") === "YES";
+  updateRoleUI();
+  listenData();
+}
+
+function listenData(){
+  setSyncStatus("Connecting...");
+  recordsRef.orderBy("createdAt","desc").onSnapshot(function(snapshot){
+    records = [];
+    snapshot.forEach(function(doc){var d = doc.data(); d.id = doc.id; records.push(d);});
+    setSyncStatus("Synced: " + records.length);
+    render();
+  }, function(err){
+    console.error(err);
+    setSyncStatus("Firebase error");
+    alert("Firebase connection error. Console check karo.");
+  });
+}
+
+function saveEntry(e){
+  e.preventDefault();
+  if(!isAdmin){alert("Client mode me entry allowed nahi hai."); return;}
+  var sizeObj = {};
+  sizes.forEach(function(s){sizeObj[s] = Number(el("size"+s).value) || 0;});
+  var total = Object.values(sizeObj).reduce(function(a,b){return a+b;},0);
+  var rec = Number(el("receivedQty").value) || 0;
+  var data = {
+    date: el("date").value || todayStr(),
+    karigar: el("karigar").value,
+    lotNo: clean(el("lotNo").value),
+    tcNo: clean(el("tcNo").value),
+    item: clean(el("item").value),
+    brand: el("brand").value,
+    material: el("material").value,
+    outDate: el("outDate").value,
+    edoa: el("edoa").value,
+    status: el("status").value,
+    mallReceived: el("mallReceived").value,
+    receivedDate: el("receivedDate").value,
+    sizes: sizeObj,
+    totalQty: total,
+    sentQty: total,
+    receivedQty: rec,
+    qtyDiff: rec ? rec-total : "",
+    photos: currentPhotos,
+    remarks: clean(el("remarks").value),
+    descriptions: getDescriptions(),
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  };
+  if(!data.karigar || !data.lotNo){alert("Karigar aur Lot No zaruri hai."); return;}
+  var task = editId ? recordsRef.doc(editId).update(data) : recordsRef.add(Object.assign(data,{createdAt:firebase.firestore.FieldValue.serverTimestamp()}));
+  task.then(function(){resetForm();}).catch(function(err){console.error(err); alert("Save error: " + err.message);});
+}
+
+function resetForm(){
+  el("entryForm").reset();
+  el("date").value = todayStr();
+  sizes.forEach(function(s){el("size"+s).value = "";});
+  currentPhotos = ["",""];
+  el("photoPreview1").style.display = "none"; el("photoPreview2").style.display = "none";
+  editId = null;
+  el("formTitle").innerText = "New Stitching Entry";
+  el("submitBtn").innerText = "Add Entry";
+  renderDescriptions();
+  calcTotal();
+}
+function editRecord(id){
+  if(!isAdmin){alert("Client mode me edit allowed nahi hai."); return;}
+  var r = records.find(function(x){return x.id === id;});
+  if(!r) return;
+  editId = id;
+  el("formTitle").innerText = "Edit Stitching Entry";
+  el("submitBtn").innerText = "Update Entry";
+  ["date","karigar","lotNo","tcNo","item","brand","material","outDate","edoa","status","mallReceived","receivedDate","receivedQty","remarks"].forEach(function(k){
+    if(el(k)) el(k).value = r[k] || "";
+  });
+  sizes.forEach(function(s){el("size"+s).value = (r.sizes && r.sizes[s]) || "";});
+  currentPhotos = r.photos || ["",""];
+  ["photoPreview1","photoPreview2"].forEach(function(id,i){if(currentPhotos[i]){el(id).src=currentPhotos[i]; el(id).style.display="block";}else{el(id).style.display="none";}});
+  renderDescriptions(r.descriptions || []);
+  calcTotal();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function deleteRecord(id){
+  if(!isAdmin){alert("Client mode me delete allowed nahi hai."); return;}
+  if(confirm("Delete this entry?")) recordsRef.doc(id).delete();
+}
+function clearAll(){
+  if(!isAdmin){alert("Client mode me clear all allowed nahi hai."); return;}
+  if(!confirm("Saara data delete karna hai?")) return;
+  var batch = db.batch();
+  records.forEach(function(r){batch.delete(recordsRef.doc(r.id));});
+  batch.commit();
+}
+
+function filteredRecords(){
+  var q = clean(el("search").value).toLowerCase();
+  var fk = el("filterKarigar").value;
+  var fs = el("filterStatus").value;
+  var from = el("filterFrom").value;
+  var to = el("filterTo").value;
+  return records.filter(function(r){
+    var text = [r.karigar,r.lotNo,r.tcNo,r.item,r.brand,r.status,r.material,descText(r.descriptions)].join(" ").toLowerCase();
+    return (!q || text.includes(q)) && (fk==="ALL" || r.karigar===fk) && (fs==="ALL" || r.status===fs) && (!from || r.date>=from) && (!to || r.date<=to);
+  });
+}
+
+function render(){
+  var list = filteredRecords();
+  var total = records.reduce(function(a,r){return a + (Number(r.totalQty)||0);},0);
+  var out = records.filter(function(r){return r.status==="OUT";}).reduce(function(a,r){return a + (Number(r.totalQty)||0);},0);
+  var hold = records.filter(function(r){return r.status==="HOLD";}).reduce(function(a,r){return a + (Number(r.totalQty)||0);},0);
+  el("totalEntries").innerText = records.length;
+  el("grandTotal").innerText = total;
+  el("outQty").innerText = out;
+  el("holdQty").innerText = hold;
+  el("emptyMsg").style.display = list.length ? "none" : "block";
+
+  el("tableBody").innerHTML = list.map(function(r){
+    var row = "<tr><td>"+esc(r.date)+"</td><td>"+esc(r.karigar)+"</td><td>"+esc(r.lotNo)+"</td><td>"+esc(r.tcNo)+"</td><td>"+esc(r.item)+"<br>"+esc(descText(r.descriptions))+"</td><td>"+esc(r.brand)+"</td>";
+    sizes.forEach(function(s){row += "<td>"+esc(r.sizes && r.sizes[s] ? r.sizes[s] : "")+"</td>";});
+    row += "<td><b>"+esc(r.totalQty)+"</b></td><td>"+badge(r.material)+"</td><td>"+esc(r.outDate)+"</td><td>"+esc(r.edoa)+"</td><td>"+badge(r.status)+"</td><td>"+badge(r.mallReceived)+"</td><td>"+esc(r.receivedDate)+"</td><td>"+esc(r.sentQty)+"</td><td>"+esc(r.receivedQty)+"</td><td>"+diffBadge(r.qtyDiff)+"</td>";
+    row += "<td>"+photoLinks(r)+"</td><td>"+(isAdmin ? "<button class='btn-edit' onclick=\"editRecord('"+r.id+"')\">Edit</button> <button class='btn-red' onclick=\"deleteRecord('"+r.id+"')\">Delete</button>" : "-")+"</td></tr>";
+    return row;
+  }).join("");
+
+  el("mobileList").innerHTML = list.map(function(r){
+    return "<div class='mobile-card'><b>"+esc(r.lotNo)+"</b> - "+esc(r.karigar)+"<br>Qty: <b>"+esc(r.totalQty)+"</b> | "+badge(r.status)+"<br>EDOA: "+esc(r.edoa)+" | Received: "+badge(r.mallReceived)+"<br>"+photoLinks(r)+"<br>"+(isAdmin ? "<button class='btn-edit' onclick=\"editRecord('"+r.id+"')\">Edit</button> <button class='btn-red' onclick=\"deleteRecord('"+r.id+"')\">Delete</button>" : "")+"</div>";
+  }).join("");
+}
+function photoLinks(r){
+  var p = r.photos || [];
+  var out = [];
+  if(p[0]) out.push("<span style='color:#2563eb;font-weight:800;cursor:pointer' onclick='openPhoto(\""+p[0]+"\")'>Photo 1</span>");
+  if(p[1]) out.push("<span style='color:#2563eb;font-weight:800;cursor:pointer' onclick='openPhoto(\""+p[1]+"\")'>Photo 2</span>");
+  return out.join(" | ") || "-";
+}
+function csvRows(list){
+  var head = ["Date","Karigar","Lot","TC","Item","Brand","Total","Material","Out Date","EDOA","Status","Received","Received Date","Sent Qty","Received Qty","Diff","Description","Remarks"];
+  var rows = [head].concat(list.map(function(r){
+    return [r.date,r.karigar,r.lotNo,r.tcNo,r.item,r.brand,r.totalQty,r.material,r.outDate,r.edoa,r.status,r.mallReceived,r.receivedDate,r.sentQty,r.receivedQty,r.qtyDiff,descText(r.descriptions),r.remarks];
+  }));
+  return rows.map(function(row){return row.map(function(v){return '"' + String(v==null?"":v).replace(/"/g,'""') + '"';}).join(",");}).join("\n");
+}
+function downloadCSV(){
+  var blob = new Blob([csvRows(filteredRecords())], {type:"text/csv"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "stitching-report.csv";
+  a.click();
+}
+function shareAllReport(){
+  var list = filteredRecords();
+  var msg = "CLASSROOM UNIFORM STITCHING REPORT\nEntries: " + list.length + "\nQty: " + list.reduce(function(a,r){return a+(Number(r.totalQty)||0);},0);
+  if(navigator.share){navigator.share({text:msg});} else {navigator.clipboard.writeText(msg); alert("Report copied");}
+}
+
+window.addEventListener("load",init);
+</script>
+</body>
+</html>
