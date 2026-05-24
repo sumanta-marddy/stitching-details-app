@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CLASSROOM UNIFORM PVT LTD - STITCHING DETAILS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+body{background:linear-gradient(135deg,#e0f2fe,#f8fafc,#dbeafe);color:#0f172a;min-height:100vh}
+header{background:linear-gradient(135deg,#020617,#0f172a,#1e293b);padding:22px;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+header h1{font-size:28px;font-family:'Orbitron',sans-serif;font-weight:800;background:linear-gradient(90deg,#fff,#93c5fd);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header p{margin-top:8px;font-size:13px;letter-spacing:7px;color:#cbd5e1;font-weight:700}
+.container{max-width:1450px;margin:auto;padding:16px}.card{background:rgba(255,255,255,.95);border-radius:24px;padding:18px;margin-bottom:16px;border:1px solid #dbeafe;box-shadow:0 10px 35px rgba(15,23,42,.12)}
+h2{font-size:26px;font-weight:900;margin-bottom:14px}h3{margin:14px 0 8px}
+label{font-size:13px;font-weight:800;margin-bottom:6px;display:block;color:#334155}
+input,select{width:100%;padding:13px;border-radius:16px;border:2px solid #dbeafe;background:#fff;font-size:15px;font-weight:700;color:#0f172a}
+input:focus,select:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 5px rgba(37,99,235,.12)}
+button{border:0;border-radius:16px;padding:13px;font-weight:900;cursor:pointer;font-size:15px;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.btn-main,.btn-dark{background:linear-gradient(135deg,#020617,#1e3a8a);color:#fff}.btn-green{background:linear-gradient(135deg,#15803d,#22c55e);color:#fff}.btn-blue{background:linear-gradient(135deg,#2563eb,#60a5fa);color:#fff}.btn-red{background:#fee2e2;color:#b91c1c}.btn-edit{background:#fef3c7;color:#92400e}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.sizes{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}.summary div{background:linear-gradient(145deg,#fff,#eff6ff);padding:18px;border-radius:20px;border:1px solid #dbeafe}.summary p{font-size:14px;font-weight:800;color:#64748b}.summary h3{font-size:32px;font-weight:900}
+.role-row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:end}.role-badge{display:inline-block;padding:10px 18px;border-radius:999px;font-weight:900}.admin-badge{background:#dcfce7;color:#15803d}.client-badge{background:#dbeafe;color:#1d4ed8}
+.admin-only{display:none}.client-note{background:#e0f2fe;color:#075985;border-radius:18px;padding:14px;font-weight:900;margin-bottom:14px}.small-note{font-size:12px;color:#64748b;margin-top:5px;font-weight:700}
+.section-title{background:#eef2ff;color:#1e3a8a;padding:10px 14px;border-radius:14px;margin-bottom:12px;font-weight:900}
+.table-wrap{overflow-x:auto;border-radius:18px}table{width:100%;border-collapse:collapse;background:#fff;min-width:1900px;table-layout:auto}th{background:#020617;color:#fff;padding:12px;font-size:12px;text-align:left;white-space:nowrap}td{padding:9px;border-bottom:1px solid #e2e8f0;font-size:12px;font-weight:700;vertical-align:top;line-height:1.6;white-space:normal}
+.badge{padding:6px 12px;border-radius:999px;font-size:12px;font-weight:900;display:inline-block;white-space:nowrap}.out,.yes,.ok,.clear{background:#dcfce7;color:#15803d}.hold,.no,.short{background:#fee2e2;color:#b91c1c}.pending{background:#fef3c7;color:#b45309}.extra{background:#dbeafe;color:#1d4ed8}.notneed{background:#e2e8f0;color:#334155}
+.field-manager-inline{background:#f8fafc;border:2px dashed #cbd5e1;padding:12px;border-radius:18px;margin-bottom:14px}.entry-field{min-width:0}.desc-box{background:#f8fafc;border:2px dashed #cbd5e1;padding:12px;border-radius:18px;margin-top:10px}.desc-row{display:grid;grid-template-columns:1.2fr 1fr 2fr auto;gap:10px;margin-bottom:10px}
+.sync-status{position:fixed;bottom:12px;right:12px;background:#020617;color:#fff;padding:10px 16px;border-radius:999px;font-size:12px;font-weight:900;z-index:9999}.empty{padding:35px;text-align:center;color:#64748b;font-weight:800}.mobile-list{display:none}.mobile-card{background:#fff;padding:14px;border-radius:18px;margin-bottom:10px;border:1px solid #dbeafe}
+.history-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9998;padding:18px;align-items:center;justify-content:center}.history-content{background:#fff;border-radius:22px;padding:18px;max-width:1100px;width:96vw;max-height:86vh;overflow:auto}.history-close{float:right;background:#fee2e2;color:#991b1b}
+.photo-preview{margin-top:8px;max-width:170px;max-height:170px;border-radius:16px;border:2px solid #dbeafe;display:none}.photo-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;padding:20px;align-items:center;justify-content:center}.photo-modal img{max-width:95vw;max-height:85vh;border-radius:20px;border:4px solid #fff}.photo-modal button{position:fixed;top:16px;right:16px}
+
+.pass-wrap{display:grid;grid-template-columns:1fr 84px;gap:8px;align-items:center}.pass-wrap input{min-width:0}.btn-eye{background:#e0f2fe;color:#075985;border:2px solid #bae6fd;box-shadow:none;padding:12px;border-radius:14px}.field-manager-row{display:grid;grid-template-columns:1.2fr 1fr 1.8fr auto auto;gap:10px;align-items:end;margin-bottom:10px}.field-pill{display:inline-block;background:#eef2ff;color:#1e3a8a;border-radius:999px;padding:8px 12px;font-weight:900}.custom-field-box{margin-top:12px;border:2px dashed #bfdbfe;border-radius:18px;padding:12px;background:#f8fafc}.custom-field-box h3{margin-top:0}.custom-field-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.super-admin-only{display:none}
+@media(max-width:768px){.field-manager-row,.custom-field-grid{grid-template-columns:1fr!important}.pass-wrap{grid-template-columns:1fr 84px}
+header h1{font-size:20px}header p{letter-spacing:4px}.grid,.grid-5{grid-template-columns:1fr}.sizes{grid-template-columns:repeat(3,1fr)}.summary{grid-template-columns:1fr 1fr}.actions{grid-template-columns:1fr 1fr}.desc-row,.role-row{grid-template-columns:1fr!important}.table-wrap.main-table{display:none}.mobile-list{display:block}h2{font-size:24px}}
+td.desc-cell{min-width:280px;max-width:380px;white-space:normal;line-height:1.7}td.school-cell,td.customer-cell{white-space:nowrap!important;min-width:160px;max-width:260px;overflow:hidden;text-overflow:ellipsis}
+.late-row{background:#fff1f2!important}
+.locked-row{background:#f8fafc!important;color:#64748b}
+.lock-badge{background:#e2e8f0;color:#334155}
+.late-badge{background:#fee2e2;color:#b91c1c}
+.pending-alert-card{background:linear-gradient(145deg,#fff7ed,#ffedd5)!important;border:2px solid #fed7aa!important}
+.alert-table table{min-width:900px}
+</style>
+</head>
+<body>
+<header><h1>CLASSROOM UNIFORM PVT LTD</h1><p>STITCHING DETAILS</p></header>
+<div id="photoModal" class="photo-modal" onclick="closePhotoModal()"><button type="button" onclick="closePhotoModal()">Close</button><img id="modalPhoto"></div>
+<div id="syncStatus" class="sync-status">Connecting...</div>
+<div id="lotHistoryModal" class="history-modal" onclick="closeLotHistory(event)">
+  <div class="history-content" onclick="event.stopPropagation()">
+    <button type="button" class="history-close" onclick="hideLotHistory()">Close</button>
+    <h2>Lot History</h2>
+    <div id="lotHistoryBody"></div>
+  </div>
+</div>
+<div class="container">
+
+<div class="card">
+<h2>Admin Panel</h2>
+<div class="role-row">
+<div><label>Admin Password</label><input type="password" id="adminPass" placeholder="Admin password"></div>
+<button class="btn-dark" onclick="adminLogin()">Admin Login</button>
+<button class="btn-red" onclick="adminLogout()">Client Mode</button>
+</div>
+<p class="small-note">Admin mode me entry, edit/delete, password change aur receiving manage hoga. Field/sequence manage sirf Super Admin karega.</p>
+<div style="margin-top:10px"><span id="roleBadge" class="role-badge client-badge">CLIENT VIEW ONLY</span></div>
+
+<div class="admin-only" style="margin-top:14px">
+<h3>Super Admin Access</h3>
+<div class="grid">
+<div><label>Super Admin Password</label><input type="password" id="superAdminPass" placeholder="Super admin password"></div>
+<div><label>Access</label><button type="button" class="btn-dark" onclick="superAdminLogin()">Super Admin Login</button></div>
+<div><label>Logout</label><button type="button" class="btn-red" onclick="superAdminLogout()">Exit Super Admin</button></div>
+<div><label>Status</label><input id="superAdminStatus" readonly value="LOCKED"></div>
+</div>
+<p class="small-note">Field manager, sequence, edit, hide/unhide, delete/restore ka right sirf Super Admin ko hoga.</p>
+</div>
+
+<div class="super-admin-only" style="margin-top:14px;display:none">
+<h3>Super Admin Password Settings - Firebase Sync</h3>
+<div class="grid">
+<div><label>Current Super Password</label><input type="password" id="superCurrentPass"></div>
+<div><label>New Super Password</label><input type="password" id="superNewPass"></div>
+<div><label>Confirm Super Password</label><input type="password" id="superConfirmPass"></div>
+<div><label>Action</label><button type="button" class="btn-blue" onclick="changeSuperPassword()">Change Super Password</button></div>
+</div>
+<p class="small-note">Super Admin password Firebase me save hoga.</p>
+</div>
+
+<div class="admin-only" style="margin-top:14px">
+<h3>Password Settings - Firebase Sync</h3>
+<div class="grid">
+<div><label>Current Admin Password</label><input type="password" id="adminCurrentPass"></div>
+<div><label>New Admin Password</label><input type="password" id="adminNewPass"></div>
+<div><label>Confirm Admin Password</label><input type="password" id="adminConfirmPass"></div>
+<div><label>Action</label><button type="button" class="btn-blue" onclick="changeAdminPassword()">Change Admin Password</button></div>
+</div>
+<p class="small-note">Admin password Firebase me save hoga, sab device par same password chalega.</p>
+</div>
+
+</div>
+
+<div id="clientNote" class="client-note">Client view: aap sirf entries, receiving report, filter, CSV aur share kar sakte ho.</div>
+
+<div class="card admin-only">
+<h2 id="formTitle">New Stitching Dispatch Entry</h2>
+<div class="section-title">Dispatch Entry Details</div>
+<div class="field-manager-inline super-admin-only" id="superFieldManager" style="display:none">
+<h3>Entry Fields & Sequence Manager</h3>
+<p class="small-note">Sirf Super Admin yahan se existing fields aur new fields ka label, type, dropdown options, hide/unhide/delete aur sequence number set karega. Sequence No. jiska chhota hoga wo New Entry me pehle dikhega.</p>
+<div class="field-manager-row">
+<div><label>Field Label</label><input id="fieldLabel" placeholder="Example: Cutting Name"></div>
+<div><label>Field Type</label><select id="fieldType"><option value="text">Text</option><option value="number">Number</option><option value="date">Date</option><option value="dropdown">Dropdown</option></select></div>
+<div><label>Sequence No.</label><input type="number" id="fieldOrder" placeholder="1, 2, 3..."></div>
+<div><label>Dropdown Options</label><input id="fieldOptions" placeholder="SABIR, NAZIR, SARIF, KAMARUL"></div>
+<button type="button" class="btn-blue" onclick="saveCustomField()">Save Field</button>
+<button type="button" class="btn-red" onclick="clearFieldEditor()">Clear</button>
+<button type="button" class="btn-green" onclick="restoreHiddenSystemFields()">Restore Hidden</button>
+</div>
+<input type="hidden" id="editingFieldId">
+<div id="customFieldsList" class="small-note"></div>
+</div>
+<form id="entryForm">
+<div class="grid" id="entryGrid">
+<div class="entry-field" data-field-id="date" style="order:10"><label>Date</label><input type="date" id="date"></div>
+<div class="entry-field" data-field-id="karigar" style="order:20"><label>Karigar</label><select id="karigar"><option value="">Select</option></select></div>
+<div class="entry-field" data-field-id="lotNo" style="order:30"><label>Lot No</label><input id="lotNo" placeholder="S-100"></div>
+<div class="entry-field" data-field-id="tcNo" style="order:40"><label>TC No</label><input id="tcNo"></div>
+<div class="entry-field" data-field-id="item" style="order:50"><label>Item</label><select id="item"><option>H/S</option><option>F/S</option><option>H/P</option><option>F/P</option><option>TUNIK</option><option>SKIRT</option><option>KURTI WITH PYJAMA</option><option>BLAZZER</option><option>PYJAMA</option><option>SHIRT</option><option>PANT</option><option>T-SHIRT</option><option>TRACK PANT</option><option>SHORTS</option><option>DIVIDER</option><option>FROCK</option><option>WAIST COAT</option><option>TIE</option><option>BELT</option><option>HOUSE T-SHIRT</option></select></div>
+<div class="entry-field" data-field-id="schoolName" style="order:60"><label>School Name</label><input id="schoolName" placeholder="School name"></div>
+<div class="entry-field" data-field-id="customerName" style="order:70"><label>Customer Name</label><input id="customerName" placeholder="Customer name"></div>
+<div class="entry-field" data-field-id="brand" style="order:80"><label>Brand</label><select id="brand"><option>C/L</option><option>P/A</option></select></div>
+<div class="entry-field" data-field-id="material" style="order:90"><label>Material</label><select id="material"><option>CLEAR</option><option>PENDING</option><option>NOT NEED</option></select></div>
+<div class="entry-field" data-field-id="outDate" style="order:100"><label>Out Date</label><input type="date" id="outDate"></div>
+<div class="entry-field" data-field-id="edoa" style="order:110"><label>EDOA</label><input type="date" id="edoa"></div>
+<div class="entry-field" data-field-id="status" style="order:120"><label>Status</label><select id="status"><option>OUT</option><option>HOLD</option></select></div>
+<div id="customEntryFields" style="display:contents"></div>
+<div class="entry-field" data-field-id="photo1" style="order:900"><label>Photo 1</label><input type="file" id="photo1" accept="image/*"><img id="photoPreview1" class="photo-preview"></div>
+<div class="entry-field" data-field-id="photo2" style="order:910"><label>Photo 2</label><input type="file" id="photo2" accept="image/*"><img id="photoPreview2" class="photo-preview"></div>
+<div class="entry-field" data-field-id="remarks" style="order:920"><label>Dispatch Remarks</label><input id="remarks"></div>
+</div>
+<div class="desc-box">
+<div class="desc-row"><b>Heading</b><b>Status</b><b>Extra Detail</b><b>Action</b></div>
+<div id="descriptionRows"></div>
+<button type="button" class="btn-blue" onclick="addDescriptionRow()">+ Add Description</button>
+</div>
+<h3>Size-wise Quantity</h3>
+<div style="display:grid;grid-template-columns:1fr 220px;gap:12px;align-items:end;margin-bottom:10px">
+<div class="small-note">Size quantity enter karte hi total quantity live update hoga.</div>
+<div><label>Live Total Qty</label><input id="liveTotalQty" readonly value="0"></div>
+</div>
+<div class="sizes" id="sizeInputs"></div>
+<button class="btn-main" type="submit" id="submitBtn">Add Dispatch Entry</button>
+</form>
+</div>
+
+<div class="card admin-only">
+<h2>Separate Receiving Update</h2>
+<div class="section-title">Lot ya Karigar dropdown se select karo. Sent quantity automatic aayega. Sirf receiving date aur receiving quantity enter karo.</div>
+<div class="grid">
+<div><label>Type Lot No</label><input id="receiveLotSearch" placeholder="Type lot no" oninput="updateReceiveDropdown()"></div><div><label>Select Karigar</label><select id="receiveKarigarFilter" onchange="updateReceiveDropdown()"><option value="">All Karigar</option></select></div><div><label>Select Lot / Karigar</label><select id="receiveEntry"><option value="">Select lot / karigar</option></select></div>
+<div><label>Auto Sent Qty</label><input id="sentQty" readonly></div>
+<div><label>Receiving Date</label><input type="date" id="receivedDate"></div>
+<div><label>Receiving Qty</label><input type="number" min="0" id="receivedQty" oninput="calcQtyDiff()"></div>
+<div><label>Auto Difference</label><input id="qtyDiff" readonly></div>
+<div><label>Item Received</label><input id="mallReceived" readonly value="PENDING"></div>
+<div><label>Receiving Remark</label><input id="receiveRemark" placeholder="Optional"></div>
+</div>
+<button class="btn-green" type="button" onclick="updateReceive()">Update Receiving</button>
+</div>
+
+<div class="summary">
+<div><p>Total Entries</p><h3 id="totalEntries">0</h3></div>
+<div><p>Total Quantity</p><h3 id="grandTotal">0</h3></div>
+<div><p>OUT Qty</p><h3 id="outQty">0</h3></div>
+<div><p>HOLD Qty</p><h3 id="holdQty">0</h3></div>
+</div>
+<div class="card pending-alert-card">
+<h2>Pending Item Alert Dashboard</h2>
+<div class="section-title">Jiska item abhi tak received nahi hua ya EDOA cross ho gaya, wo yahan dikhega.</div>
+<div class="summary" style="margin-top:12px">
+<div><p>Pending Lots</p><h3 id="pendingLotsCount">0</h3></div>
+<div><p>Pending Qty</p><h3 id="pendingQtyTotal">0</h3></div>
+<div><p>Late Lots</p><h3 id="lateLotsCount">0</h3></div>
+<div><p>Late Qty</p><h3 id="lateQtyTotal">0</h3></div>
+</div>
+<div class="table-wrap alert-table">
+<table>
+<thead><tr><th>EDOA</th><th>Late?</th><th>Karigar</th><th>Lot</th><th>TC</th><th>Item</th><th>Sent Qty</th><th>Received</th><th>Action</th></tr></thead>
+<tbody id="pendingAlertBody"></tbody>
+</table>
+</div>
+</div>
+
+<div class="card">
+<h2>Complete Dispatch Filter / Report</h2>
+<div class="grid-5">
+<div><label>Search Any Text</label><input id="search"></div>
+<div><label>Report Type</label><select id="reportType"><option value="ALL">ALL</option><option value="DAY">DAY WISE</option><option value="MONTH">MONTH WISE</option><option value="YEAR">YEAR WISE</option></select></div>
+<div><label>Report Date</label><input type="date" id="reportDate"></div>
+<div><label>Report Month</label><input type="month" id="reportMonth"></div>
+<div><label>Report Year</label><input type="number" id="reportYear" placeholder="2026"></div>
+<div><label>From Date</label><input type="date" id="filterFrom"></div><div><label>To Date</label><input type="date" id="filterTo"></div>
+<div><label>Karigar</label><select id="filterKarigar"><option value="ALL">All Karigar</option></select></div>
+<div><label>Lot No</label><input id="filterLot"></div><div><label>TC No</label><input id="filterTc"></div>
+<div><label>Item</label><input id="filterItem"></div><div><label>School Name</label><input id="filterSchool"></div><div><label>Customer Name</label><input id="filterCustomer"></div><div><label>Brand</label><select id="filterBrand"><option value="ALL">ALL</option><option>C/L</option><option>P/A</option></select></div>
+<div><label>Material</label><select id="filterMaterial"><option value="ALL">ALL</option><option>CLEAR</option><option>PENDING</option><option>NOT NEED</option></select></div>
+<div><label>Status</label><select id="filterStatus"><option value="ALL">ALL</option><option>OUT</option><option>HOLD</option></select></div>
+<div><label>Item Received</label><select id="filterReceived"><option value="ALL">ALL</option><option>PENDING</option><option>YES</option><option>NO</option></select></div>
+<div><label>Out Date</label><input type="date" id="filterOutDate"></div><div><label>EDOA</label><input type="date" id="filterEdoa"></div><div><label>Received Date</label><input type="date" id="filterReceivedDate"></div>
+<div><label>Description Heading</label><select id="filterDesc"><option value="ALL">ALL</option></select></div><div><label>Size</label><select id="filterSize"><option value="ALL">ALL</option></select></div>
+</div>
+<div class="actions"><button class="btn-green" onclick="shareAllReport()">Share Report</button><button class="btn-blue" onclick="downloadCSV()">CSV Download</button><button class="btn-red" onclick="resetFilters()">Reset Filter</button></div>
+</div>
+
+<div class="card">
+<h2>Filtered Report Result</h2><p class='small-note'>Upar wale dispatch filters ka result yahin dikhega. Isme edit/delete nahi rahega.</p>
+<div class="table-wrap main-table"><table><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table></div>
+<div class="mobile-list" id="mobileList"></div>
+<div class="empty" id="emptyMsg">Abhi koi stitching entry nahi hai.</div>
+</div>
+
+<div class="card">
+<h2>Receiving Report Filter</h2>
+<div class="section-title">Yahan se monthly/day/year wise report banega: kitna item SHORT, EXTRA ya FULL aa raha hai.</div>
+<div id="receiveWarningBox" style="display:none;background:#fee2e2;color:#991b1b;border:2px solid #fecaca;border-radius:16px;padding:12px;margin-bottom:12px;font-weight:900"></div>
+<div class="grid-5">
+<div><label>Search Lot / Karigar / TC</label><input id="recSearch" oninput="render()" placeholder="Example: S-237"></div><div><label>Check Lot Status</label><button type="button" class="btn-red" onclick="checkReceivingReportSearchAlert(true)">Check Status</button></div>
+<div><label>Report Type</label><select id="recType"><option value="ALL">ALL</option><option value="DAY">DAY WISE</option><option value="MONTH">MONTH WISE</option><option value="YEAR">YEAR WISE</option></select></div>
+<div><label>Receiving Date</label><input type="date" id="recDate"></div>
+<div><label>Receiving Month</label><input type="month" id="recMonth"></div>
+<div><label>Receiving Year</label><input type="number" id="recYear" placeholder="2026"></div>
+<div><label>Karigar</label><select id="recKarigar"><option value="ALL">All Karigar</option></select></div>
+<div><label>Difference Type</label><select id="recDiffType"><option value="ALL">ALL</option><option value="SHORT">SHORT</option><option value="EXTRA">EXTRA</option><option value="FULL">FULL</option></select></div>
+<div><label>From Receiving Date</label><input type="date" id="recFrom"></div>
+<div><label>To Receiving Date</label><input type="date" id="recTo"></div>
+</div>
+<div class="summary" style="margin-top:12px">
+<div><p>Received Entries</p><h3 id="recEntryCount">0</h3></div>
+<div><p>Total Sent</p><h3 id="recSentTotal">0</h3></div>
+<div><p>Total Received</p><h3 id="recReceivedTotal">0</h3></div>
+<div><p>Net Difference</p><h3 id="recDiffTotal">0</h3></div>
+</div>
+<div class="actions"><button class="btn-green" onclick="shareReceiveReport()">Share Receiving</button><button class="btn-blue" onclick="downloadReceiveCSV()">Receiving CSV</button><button class="btn-red" onclick="resetReceiveFilters()">Reset Receiving Filter</button></div>
+<div class="table-wrap" style="margin-top:12px"><table style="min-width:1200px"><thead><tr><th>Receive Date</th><th>Karigar</th><th>Lot</th><th>TC</th><th>Item</th><th>Sent Qty</th><th>Received Qty</th><th>Difference</th><th>Status</th><th>Remark</th></tr></thead><tbody id="receiveReportBody"></tbody></table></div>
+</div>
+
+
+
+
+<div class="card">
+<h2>Recent Activity Log</h2>
+<div class="section-title">Entry add/edit/delete/receiving update ka record yahan dikhega.</div>
+<div class="table-wrap activity-log-box">
+<table style="min-width:900px">
+<thead><tr><th>Time</th><th>Action</th><th>Lot</th><th>Karigar</th><th>Details</th></tr></thead>
+<tbody id="activityLogBody"></tbody>
+</table>
+</div>
+</div>
+
+<div class="card">
+<h2>Google Sheet Link + All Entries</h2>
+<div class="section-title">Yahan Google Sheet link paste karo. Neeche All Entries hamesha full database dikhayega, filter ka effect nahi padega. Edit/Delete sirf yahin rahega.</div>
+<div class="grid">
+<div style="grid-column:span 3"><label>Google Sheet Link</label><input id="googleSheetLink" placeholder="Paste Google Sheet / Web App link here"></div>
+<div><label>Action</label><button type="button" class="btn-blue" onclick="saveGoogleSheetLink()">Save Link</button></div>
+</div>
+<p class="small-note" id="sheetSyncStatus">Google Sheet auto sync ready.</p>
+<div class="actions">
+<button type="button" class="btn-green" onclick="sendAllEntriesToGoogleSheet()">Patch All Entries to Google Sheet</button>
+<button type="button" class="btn-blue" onclick="downloadAllCSV()">Download All Entries CSV</button>
+</div>
+<div class="table-wrap main-table" style="margin-top:12px"><table><thead id="allTableHead"></thead><tbody id="allTableBody"></tbody></table></div>
+<div class="mobile-list" id="allMobileList"></div>
+<div class="empty" id="allEmptyMsg">Abhi koi all entry nahi hai.</div>
+</div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig={apiKey:"AIzaSyCGMtokh5Ur6dceRl1fR0gSQbGT69yocB4",authDomain:"stitching-details-app.firebaseapp.com",projectId:"stitching-details-app",storageBucket:"stitching-details-app.appspot.com",messagingSenderId:"882044319583",appId:"1:882044319583:web:1ec344295f2fc5dbbc28ea",measurementId:"G-D8JPJF5265"};
+firebase.initializeApp(firebaseConfig);
+
+// Firebase mobile/GitHub Pages connection fix
+firebase.firestore().settings({
+  experimentalForceLongPolling: true,
+  useFetchStreams: false
+});
+var db=firebase.firestore(),recordsRef=db.collection("stitchingRecords"),activityRef=db.collection("activityLog"),settingsRef=db.collection("appSettings").doc("security"),customFieldsRef=db.collection("appSettings").doc("customFields"),records=[],customFields=[],systemFieldSettings=[],editId=null,isAdmin=false,isSuperAdmin=false,ADMIN_PASSWORD="1234",SUPER_ADMIN_PASSWORD="9999",currentPhotos=["",""];
+var karigars=["Regent","NCPAL","Barasat","Halim","Sarif","Milan","Kamrul","Bapi","Manjrul"],sizes=[10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50];
+var descHeadings=["COLLAR","BAND","SLEEVE","CUFF","BOX","PATTI","PLACKET","POCKET","SIDE POCKET","BACK POCKET","FLAP","BUTTON","BUTTON PATTI","LUPI","CHAIN","HOOK","VELCRO","ELASTIC","DORI","BELT","PIPING","MATCHING","TAPE","RIB","EMBROIDERY","PRINT","PATCH","BADGE","LABEL","SIZE LABEL","WASH CARE LABEL","TAG","STICKER","CAP","REMARK"],descStatuses=["","YES","NO","PENDING","DONE","NOT NEED"];
+function el(id){return document.getElementById(id)}function clean(v){return String(v||"").trim()}function esc(v){return String(v==null||v===""?"-":v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/;/g,"; ").replace(/\|/g," | ")}function todayStr(){return new Date().toISOString().slice(0,10)}function setSyncStatus(m){el("syncStatus").innerText=m}
+
+function formatDate(v){
+  if(!v) return "-";
+  let p = String(v).split("-");
+  if(p.length === 3) return Number(p[2]) + "/" + Number(p[1]) + "/" + p[0];
+  return v;
+}
+
+function cleanDisplay(v){
+  if(v === undefined || v === null || v === "") return "-";
+  return String(v)
+    .replace(/\s*;\s*/g,";<br>")
+    .replace(/\s*\n\s*/g,"<br>")
+    .replace(/\s*-\s*-\s*/g," - ")
+    .replace(/<br>\s*-\s*/g,"<br>")
+    .replace(/\s{2,}/g," ");
+}
+
+function updateLiveTotal(){
+  let t = 0;
+  sizes.forEach(s => {
+    let x = el("size" + s);
+    if(x) t += Number(x.value) || 0;
+  });
+  let box = el("liveTotalQty");
+  if(box) box.value = t;
+}
+
+function descDisplay(arr){
+  if(!arr || !arr.length) return "-";
+  let lines = arr.map(x => {
+    let h = String(x.heading || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let s = String(x.status || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let d = String(x.detail || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let line = "";
+    if(h) line += esc(h);
+    if(s) line += (line ? ": " : "") + esc(s);
+    if(d) line += (line ? " - " : "") + esc(d);
+    return line;
+  }).filter(Boolean);
+  return lines.join("<br>");
+}
+
+
+function isReceivedFull(r){
+  return r && r.mallReceived === "YES" && Number(r.receivedQty || 0) > 0 && Number(r.qtyDiff || 0) === 0;
+}
+function isLocked(r){ return false; }
+function isLate(r){
+  if(!r || !r.edoa) return false;
+  let today = new Date().toISOString().slice(0,10);
+  let notReceived = !(r.mallReceived === "YES" && Number(r.receivedQty || 0) > 0);
+  return notReceived && r.edoa < today;
+}
+function lockBadge(r){
+  if(isReceivedFull(r)) return "<span class='badge lock-badge'>LOCKED</span>";
+  return "<span class='badge pending'>OPEN</span>";
+}
+function lateBadge(r){
+  if(isLate(r)) return "<span class='badge late-badge'>LATE</span>";
+  return "<span class='badge ok'>OK</span>";
+}
+function superAdminLogin(){
+  if(!isAdmin){alert("Pehle admin login karo.");return;}
+  let passBox = el("superAdminPass");
+  let pass = passBox ? clean(passBox.value) : "";
+  if(pass === SUPER_ADMIN_PASSWORD){
+    isSuperAdmin = true;
+    localStorage.setItem("stitchingSuperAdmin","YES");
+    if(passBox) passBox.value = "";
+    alert("Super Admin login successful");
+    updateRoleUI();
+  }else{alert("Wrong super admin password");}
+}
+function superAdminLogout(){
+  isSuperAdmin = false;
+  localStorage.removeItem("stitchingSuperAdmin");
+  updateRoleUI();
+}
+
+function listenSecuritySettings(){
+  settingsRef.onSnapshot(function(doc){
+    if(doc.exists){
+      let d = doc.data() || {};
+      if(d.adminPassword) ADMIN_PASSWORD = d.adminPassword;
+      if(d.superAdminPassword) SUPER_ADMIN_PASSWORD = d.superAdminPassword;
+      console.log("Security passwords synced from Firebase");
+    }else{
+      settingsRef.set({
+        adminPassword: ADMIN_PASSWORD,
+        superAdminPassword: SUPER_ADMIN_PASSWORD,
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, {merge:true});
+    }
+  }, function(err){
+    console.error("Security settings sync error", err);
+  });
+}
+
+function changeAdminPassword(){
+  if(!isAdmin){alert("Pehle admin login karo.");return;}
+  let current = el("adminCurrentPass").value;
+  let next = el("adminNewPass").value;
+  let confirm = el("adminConfirmPass").value;
+  if(current !== ADMIN_PASSWORD){alert("Current admin password galat hai.");return;}
+  if(!next || next.length < 4){alert("New password minimum 4 character ka rakho.");return;}
+  if(next !== confirm){alert("New password aur confirm password match nahi hai.");return;}
+  settingsRef.set({
+    adminPassword: next,
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  }, {merge:true}).then(function(){
+    ADMIN_PASSWORD = next;
+    el("adminCurrentPass").value = "";
+    el("adminNewPass").value = "";
+    el("adminConfirmPass").value = "";
+    alert("Admin password Firebase me update ho gaya. Ab sab device par naya password chalega.");
+  }).catch(function(err){alert("Password update error: "+err.message);});
+}
+
+function changeSuperPassword(){
+  if(!isSuperAdmin){alert("Pehle Super Admin login karo.");return;}
+  if(!el("superCurrentPass") || !el("superNewPass") || !el("superConfirmPass")){alert("Super password setting fields missing hai. Page refresh karo.");return;}
+  let current = el("superCurrentPass").value;
+  let next = el("superNewPass").value;
+  let confirm = el("superConfirmPass").value;
+  if(current !== SUPER_ADMIN_PASSWORD){alert("Current super password galat hai.");return;}
+  if(!next || next.length < 4){alert("New password minimum 4 character ka rakho.");return;}
+  if(next !== confirm){alert("New password aur confirm password match nahi hai.");return;}
+  settingsRef.set({
+    superAdminPassword: next,
+    updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+  }, {merge:true}).then(function(){
+    SUPER_ADMIN_PASSWORD = next;
+    el("superCurrentPass").value = "";
+    el("superNewPass").value = "";
+    el("superConfirmPass").value = "";
+    alert("Super Admin password Firebase me update ho gaya. Ab sab device par naya password chalega.");
+  }).catch(function(err){alert("Password update error: "+err.message);});
+}
+
+function adminLogin(){if(el("adminPass").value===ADMIN_PASSWORD){isAdmin=true;localStorage.setItem("stitchingAdmin","YES");updateRoleUI();alert("Admin login successful")}else alert("Wrong admin password")}function adminLogout(){isAdmin=false;isSuperAdmin=false;localStorage.removeItem("stitchingAdmin");localStorage.removeItem("stitchingSuperAdmin");updateRoleUI()}
+function updateRoleUI(){
+  document.querySelectorAll(".admin-only").forEach(function(x){
+    x.style.display = isAdmin ? "block" : "none";
+  });
+
+  if(!isAdmin){
+    isSuperAdmin = false;
+    localStorage.removeItem("stitchingSuperAdmin");
+  }
+
+  document.querySelectorAll(".super-admin-only").forEach(function(x){
+    x.style.display = (isAdmin && isSuperAdmin) ? "block" : "none";
+  });
+
+  let fm = el("superFieldManager");
+  if(fm){
+    fm.style.display = (isAdmin && isSuperAdmin) ? "block" : "none";
+  }
+
+  let superStatus = el("superAdminStatus");
+  if(superStatus){
+    superStatus.value = isSuperAdmin ? "UNLOCKED" : "LOCKED";
+  }
+
+  if(isSuperAdmin){
+    el("roleBadge").innerText = "SUPER ADMIN MODE";
+    el("roleBadge").className = "role-badge admin-badge";
+  }else if(isAdmin){
+    el("roleBadge").innerText = "ADMIN MODE";
+    el("roleBadge").className = "role-badge admin-badge";
+  }else{
+    el("roleBadge").innerText = "CLIENT VIEW ONLY";
+    el("roleBadge").className = "role-badge client-badge";
+  }
+
+  el("clientNote").style.display = isAdmin ? "none" : "block";
+  try{ render(); }catch(e){ console.warn("Render pending", e); }
+}
+function descOptions(s){let h="<option value=''>Select Heading</option>";descHeadings.forEach(x=>h+="<option"+(x===s?" selected":"")+">"+x+"</option>");return h}function statusOptions(s){let h="";descStatuses.forEach(x=>h+="<option value='"+x+"'"+(x===s?" selected":"")+">"+(x||"Select")+"</option>");return h}
+function addDescriptionRow(d={}){let row=document.createElement("div");row.className="desc-row";row.innerHTML="<select class='desc-heading'>"+descOptions(d.heading||"")+"</select><select class='desc-status'>"+statusOptions(d.status||"")+"</select><input class='desc-detail' placeholder='Extra detail' value='"+esc(d.detail||"")+"'><button type='button' class='btn-red' onclick='this.parentNode.remove()'>Remove</button>";el("descriptionRows").appendChild(row)}function renderDescriptions(list){el("descriptionRows").innerHTML="";(list&&list.length?list:[{}]).forEach(addDescriptionRow)}
+function getDescriptions(){let arr=[];document.querySelectorAll("#descriptionRows .desc-row").forEach(r=>{let h=r.querySelector(".desc-heading").value,s=r.querySelector(".desc-status").value,d=clean(r.querySelector(".desc-detail").value);if(h||s||d)arr.push({heading:h,status:s,detail:d})});return arr}
+function descText(arr){
+  if(!arr || !arr.length) return "";
+  return arr.map(x => {
+    let h = String(x.heading || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let s = String(x.status || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let d = String(x.detail || "").replace(/^[-\s]+|[-\s]+$/g,"").trim();
+    let line = "";
+    if(h) line += h;
+    if(s) line += (line ? ": " : "") + s;
+    if(d) line += (line ? " - " : "") + d;
+    return line;
+  }).filter(Boolean).join("\\n");
+}
+function handlePhoto(e,i){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=ev=>{currentPhotos[i]=ev.target.result;let p=el(i===0?"photoPreview1":"photoPreview2");p.src=currentPhotos[i];p.style.display="block"};r.readAsDataURL(f)}function openPhoto(src){if(src){el("modalPhoto").src=src;el("photoModal").style.display="flex"}}function closePhotoModal(){el("photoModal").style.display="none"}
+function badge(t){let c=String(t||"").toLowerCase(),cls=c.includes("clear")?"clear":c.includes("out")||c.includes("yes")?"out":c.includes("hold")||c.includes("no")?"hold":c.includes("not")?"notneed":"pending";return "<span class='badge "+cls+"'>"+esc(t)+"</span>"}function diffBadge(v){if(v===""||v==null)return"-";let n=Number(v)||0;if(n===0)return"<span class='badge ok'>FULL</span>";if(n<0)return"<span class='badge short'>"+Math.abs(n)+" SHORT</span>";return"<span class='badge extra'>"+n+" EXTRA</span>"}
+
+function togglePass(id,btn){let input=el(id);if(!input)return;input.type=input.type==="password"?"text":"password";if(btn)btn.innerText=input.type==="password"?"Show":"Hide";}
+function wrapPasswordInputs(){["adminPass","adminCurrentPass","adminNewPass","adminConfirmPass","superAdminPass","superCurrentPass","superNewPass","superConfirmPass"].forEach(function(id){let input=el(id);if(!input||input.dataset.eyeDone)return;let wrap=document.createElement("div");wrap.className="pass-wrap";input.parentNode.insertBefore(wrap,input);wrap.appendChild(input);let btn=document.createElement("button");btn.type="button";btn.className="btn-eye";btn.innerText="Show";btn.onclick=function(){togglePass(id,btn)};wrap.appendChild(btn);input.dataset.eyeDone="YES";});}
+
+function slugifyField(v){return String(v||"").toLowerCase().trim().replace(/[^a-z0-9]+/g,"_").replace(/^_+|_+$/g,"") || ("field_"+Date.now());}
+function defaultSystemFields(){return [
+{id:"date",label:"Date",type:"date",order:10,system:true},
+{id:"karigar",label:"Karigar",type:"dropdown",order:20,system:true,options:karigars.slice()},
+{id:"lotNo",label:"Lot No",type:"text",order:30,system:true,required:true},
+{id:"tcNo",label:"TC No",type:"text",order:40,system:true},
+{id:"item",label:"Item",type:"dropdown",order:50,system:true,options:["H/S","F/S","H/P","F/P","TUNIK","SKIRT","KURTI WITH PYJAMA","BLAZZER","PYJAMA","SHIRT","PANT","T-SHIRT","TRACK PANT","SHORTS","DIVIDER","FROCK","WAIST COAT","TIE","BELT","HOUSE T-SHIRT"]},
+{id:"schoolName",label:"School Name",type:"text",order:60,system:true},
+{id:"customerName",label:"Customer Name",type:"text",order:70,system:true},
+{id:"brand",label:"Brand",type:"dropdown",order:80,system:true,options:["C/L","P/A"]},
+{id:"material",label:"Material",type:"dropdown",order:90,system:true,options:["CLEAR","PENDING","NOT NEED"]},
+{id:"outDate",label:"Out Date",type:"date",order:100,system:true},
+{id:"edoa",label:"EDOA",type:"date",order:110,system:true},
+{id:"status",label:"Status",type:"dropdown",order:120,system:true,options:["OUT","HOLD"]},
+{id:"photo1",label:"Photo 1",type:"file",order:900,system:true,noTypeEdit:true},
+{id:"photo2",label:"Photo 2",type:"file",order:910,system:true,noTypeEdit:true},
+{id:"remarks",label:"Dispatch Remarks",type:"text",order:920,system:true}
+];}
+function defaultCustomFields(){return [{id:"cutting_name",label:"Cutting Name",type:"dropdown",order:85,options:["SABIR","NAZIR","SARIF","KAMARUL"]}];}
+function mergeSystemFields(saved){let base=defaultSystemFields();let map={};(Array.isArray(saved)?saved:[]).forEach(function(f){if(f&&f.id)map[f.id]=f;});return base.map(function(f){return Object.assign({},f,map[f.id]||{}, {system:true});});}
+function visibleSystemFields(){return systemFieldSettings.filter(f=>!f.hidden).sort((a,b)=>(Number(a.order)||999)-(Number(b.order)||999));}
+function visibleCustomFields(){return customFields.filter(f=>!f.hidden).sort((a,b)=>(Number(a.order)||999)-(Number(b.order)||999));}
+function listenCustomFields(){customFieldsRef.onSnapshot(function(doc){if(doc.exists){let d=doc.data()||{};customFields=Array.isArray(d.fields)?d.fields:defaultCustomFields();systemFieldSettings=mergeSystemFields(d.systemFields);}else{customFields=defaultCustomFields();systemFieldSettings=mergeSystemFields([]);saveCustomFieldsToFirebase();}applySystemFieldsConfig();renderCustomFieldManager();renderCustomEntryFields();rebuildTableHeaders();render();},function(err){console.error("Field settings sync error",err);});}
+function saveCustomFieldsToFirebase(){return customFieldsRef.set({fields:customFields,systemFields:systemFieldSettings,updatedAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});}
+function clearFieldEditor(){if(el("editingFieldId"))el("editingFieldId").value="";if(el("fieldLabel"))el("fieldLabel").value="";if(el("fieldType"))el("fieldType").value="text";if(el("fieldOptions"))el("fieldOptions").value="";if(el("fieldOrder"))el("fieldOrder").value="";}
+function setSelectOptions(selectId,options,current){let sel=el(selectId);if(!sel||!Array.isArray(options)||!options.length)return;let val=current!==undefined?current:sel.value;let first=(selectId==="karigar")?"<option value=''>Select</option>":"";sel.innerHTML=first+options.map(function(o){return "<option value='"+esc(o)+"'>"+esc(o)+"</option>";}).join("");if(val)sel.value=val;}
+function applySystemFieldsConfig(){systemFieldSettings=mergeSystemFields(systemFieldSettings);systemFieldSettings.forEach(function(f){let node=document.querySelector(".entry-field[data-field-id='"+f.id+"']");if(node){node.style.order=Number(f.order)||999;node.style.display=f.hidden?"none":"";let lab=node.querySelector("label");if(lab)lab.innerText=f.label||f.id;}if(f.type==="dropdown"&&Array.isArray(f.options)&&f.options.length){setSelectOptions(f.id,f.options);if(f.id==="karigar"){["filterKarigar","recKarigar","receiveKarigarFilter"].forEach(function(id){setSelectOptions(id, f.options);});}}});}
+function saveCustomField(){if(!isSuperAdmin){alert("Sirf Super Admin field save/edit kar sakta hai.");return;}let label=clean(el("fieldLabel").value);let type=el("fieldType").value;let opts=clean(el("fieldOptions").value).split(",").map(x=>clean(x)).filter(Boolean);let order=Number(el("fieldOrder")&&el("fieldOrder").value)||((customFields.length+1)*10+80);let editing=el("editingFieldId").value;if(!label){alert("Field label likho.");return;}if(type==="dropdown"&&!opts.length){alert("Dropdown ke liye options likho.");return;}if(editing && editing.indexOf("sys:")===0){let sid=editing.replace("sys:","");let idx=systemFieldSettings.findIndex(f=>f.id===sid);if(idx<0)return;let old=systemFieldSettings[idx];systemFieldSettings[idx]=Object.assign({},old,{label:label,order:order,type:old.noTypeEdit?old.type:type,options:type==="dropdown"?opts:(old.options||[]),hidden:false});saveCustomFieldsToFirebase().then(function(){clearFieldEditor();applySystemFieldsConfig();renderCustomFieldManager();rebuildTableHeaders();render();alert("Existing field update ho gaya.");});return;}let id=editing||slugifyField(label);let obj={id:id,label:label,type:type,order:order,options:opts,system:false};let idx=customFields.findIndex(f=>f.id===id);if(idx>=0)customFields[idx]=Object.assign({},customFields[idx],obj,{hidden:false});else customFields.push(obj);customFields.sort((a,b)=>(Number(a.order)||999)-(Number(b.order)||999));saveCustomFieldsToFirebase().then(function(){clearFieldEditor();renderCustomEntryFields();renderCustomFieldManager();rebuildTableHeaders();render();alert("Field saved. New Entry me sequence ke hisab se dikh raha hai.");});}
+function editCustomField(id){if(!isSuperAdmin){alert("Sirf Super Admin field edit kar sakta hai.");return;}let f=null;if(String(id).indexOf("sys:")===0){f=systemFieldSettings.find(x=>x.id===String(id).replace("sys:",""));}else{f=customFields.find(x=>x.id===id);}if(!f)return;el("editingFieldId").value=(f.system?"sys:":"")+f.id;el("fieldLabel").value=f.label||"";el("fieldType").value=f.type||"text";el("fieldOptions").value=(f.options||[]).join(", ");if(el("fieldOrder"))el("fieldOrder").value=f.order||"";el("fieldLabel").focus();}
+function deleteCustomField(id){if(!isSuperAdmin){alert("Sirf Super Admin field hide/delete kar sakta hai.");return;}if(String(id).indexOf("sys:")===0){let sid=String(id).replace("sys:","");let f=systemFieldSettings.find(x=>x.id===sid);if(!f)return;let msg=f.hidden?"Existing field unhide karna hai? New Entry form me wapas aa jayega.":"Existing field hide/delete karna hai? Purana data rahega, New Entry form se field hide ho jayega.";if(!confirm(msg))return;f.hidden=!f.hidden;saveCustomFieldsToFirebase().then(function(){applySystemFieldsConfig();renderCustomFieldManager();rebuildTableHeaders();render();});return;}if(!confirm("Ye custom field delete karna hai? Purane records ka data Firebase me rahega, table/form se hide hoga."))return;customFields=customFields.filter(f=>f.id!==id);saveCustomFieldsToFirebase().then(function(){renderCustomEntryFields();renderCustomFieldManager();rebuildTableHeaders();render();});}
+function restoreHiddenSystemFields(){if(!isSuperAdmin){alert("Sirf Super Admin hidden fields restore kar sakta hai.");return;}systemFieldSettings.forEach(f=>f.hidden=false);saveCustomFieldsToFirebase().then(function(){applySystemFieldsConfig();renderCustomFieldManager();rebuildTableHeaders();render();alert("Hidden existing fields wapas aa gaye.");});}
+function renderCustomFieldManager(){let box=el("customFieldsList");if(!box)return;let systemRows=systemFieldSettings.slice().sort((a,b)=>(Number(a.order)||999)-(Number(b.order)||999));let customRows=customFields.slice().sort((a,b)=>(Number(a.order)||999)-(Number(b.order)||999));let html="<div class='small-note' style='margin:8px 0;font-weight:900'>Existing Fields</div>";html+=systemRows.map(function(f){return "<div class='field-manager-row'><div><span class='field-pill'>"+esc(f.label)+"</span> "+(f.hidden?"<span class='badge hold'>HIDDEN</span>":"<span class='badge ok'>SHOW</span>")+"</div><div>Seq: "+esc(f.order||"")+"</div><div>"+esc(f.type)+"</div><div>"+esc((f.options||[]).join(', '))+"</div><button type='button' class='btn-edit field-edit-btn' data-id='sys:"+esc(f.id)+"'>Edit</button><button type='button' class='btn-red field-delete-btn' data-id='sys:"+esc(f.id)+"'>"+(f.hidden?"Unhide":"Hide")+"</button></div>";}).join("");html+="<div class='small-note' style='margin:12px 0 8px;font-weight:900'>Custom Fields</div>";html+=(customRows.length?customRows.map(function(f){return "<div class='field-manager-row'><div><span class='field-pill'>"+esc(f.label)+"</span></div><div>Seq: "+esc(f.order||"")+"</div><div>"+esc(f.type)+"</div><div>"+esc((f.options||[]).join(', '))+"</div><button type='button' class='btn-edit field-edit-btn' data-id='"+esc(f.id)+"'>Edit</button><button type='button' class='btn-red field-delete-btn' data-id='"+esc(f.id)+"'>Delete</button></div>";}).join(""):"<div class='small-note'>Abhi koi custom field nahi hai.</div>");box.innerHTML=html;box.querySelectorAll(".field-edit-btn").forEach(function(b){b.onclick=function(){editCustomField(this.getAttribute("data-id"));};});box.querySelectorAll(".field-delete-btn").forEach(function(b){b.onclick=function(){deleteCustomField(this.getAttribute("data-id"));};});}
+function renderCustomEntryFields(values){let box=el("customEntryFields");if(!box)return;let vals=values||{};box.innerHTML=visibleCustomFields().map(function(f){let v=vals[f.id]||"";let input="";if(f.type==="dropdown"){input="<select id='cf_"+f.id+"'><option value=''>Select</option>"+(f.options||[]).map(o=>"<option value='"+esc(o)+"' "+(o===v?"selected":"")+">"+esc(o)+"</option>").join("")+"</select>";}else{input="<input type='"+(f.type||"text")+"' id='cf_"+f.id+"' value='"+esc(v)+"'>";}return "<div class='entry-field custom-entry-field' data-field-id='"+esc(f.id)+"' style='order:"+(Number(f.order)||500)+"'><label>"+esc(f.label)+"</label>"+input+"</div>";}).join("");}
+function getCustomFieldValues(){let obj={};visibleCustomFields().forEach(function(f){let x=el("cf_"+f.id);obj[f.id]=x?clean(x.value):"";});return obj;}
+function customFieldTds(r){let vals=(r&&r.customFields)||{};return visibleCustomFields().map(f=>"<td>"+cleanDisplay(esc(vals[f.id]||""))+"</td>").join("");}
+function rebuildTableHeaders(){if(!el("tableHead"))return;let headers=["Date","Karigar","Lot","TC","Item","School","Customer","Description","Brand"].concat(visibleCustomFields().map(f=>f.label)).concat(sizes).concat(["Total","Material","Out Date","EDOA","Status","Item Received","Received Date","Sent Qty","Received Qty","Pending Qty","Diff","Dispatch Remarks","Receiving Remark","Photo","Action"]);el("tableHead").innerHTML="<tr>"+headers.map(h=>"<th>"+esc(h)+"</th>").join("")+"</tr>";if(el("allTableHead"))el("allTableHead").innerHTML=el("tableHead").innerHTML;}
+
+function init(){karigars.forEach(k=>{if(el("receiveKarigarFilter"))el("receiveKarigarFilter").innerHTML+="<option>"+k+"</option>";["karigar","filterKarigar","recKarigar"].forEach(id=>el(id).innerHTML+="<option>"+k+"</option>")});sizes.forEach(s=>{el("sizeInputs").innerHTML+="<div><label>"+s+"</label><input type='number' min='0' id='size"+s+"' oninput='updateLiveTotal()'></div>";el("filterSize").innerHTML+="<option>"+s+"</option>"});descHeadings.forEach(h=>el("filterDesc").innerHTML+="<option>"+h+"</option>");
+wrapPasswordInputs();rebuildTableHeaders();renderAllEntries();
+el("entryForm").addEventListener("submit",saveEntry);["photo1","photo2"].forEach((id,i)=>el(id).addEventListener("change",e=>handlePhoto(e,i)));el("receiveEntry").addEventListener("change",loadReceiveEntry);
+["search","reportType","reportDate","reportMonth","reportYear","filterFrom","filterTo","filterKarigar","filterLot","filterTc","filterItem","filterSchool","filterCustomer","filterBrand","filterMaterial","filterStatus","filterReceived","filterOutDate","filterEdoa","filterReceivedDate","filterDesc","filterSize","recSearch","recType","recDate","recMonth","recYear","recKarigar","recDiffType","recFrom","recTo"].forEach(id=>{el(id).addEventListener("input",render);el(id).addEventListener("change",render)});
+el("date").value=todayStr();el("receivedDate").value=todayStr();renderDescriptions();updateLiveTotal();isAdmin=localStorage.getItem("stitchingAdmin")==="YES";isSuperAdmin=isAdmin && localStorage.getItem("stitchingSuperAdmin")==="YES";updateRoleUI();loadGoogleSheetLink();listenSecuritySettings();listenCustomFields();renderActivityLog();listenData()}
+function listenData(){setSyncStatus("Connecting...");recordsRef.orderBy("createdAt","desc").onSnapshot(s=>{records=[];s.forEach(doc=>{let d=doc.data();d.id=doc.id;records.push(d)});setSyncStatus("Synced: "+records.length);updateReceiveDropdown();render();renderAllEntries()},e=>{console.error(e);setSyncStatus("Firebase error");alert(e.message)})}
+
+function pendingQty(r){
+  let sent = Number(r.sentQty || r.totalQty) || 0;
+  let rec = Number(r.receivedQty) || 0;
+  return Math.max(sent - rec, 0);
+}
+function pendingBadge(r){
+  let p = pendingQty(r);
+  if(p <= 0 && Number(r.receivedQty || 0) > 0) return "<span class='badge ok'>0</span>";
+  return "<span class='badge pending-badge'>"+p+"</span>";
+}
+function lotLink(r){
+  return "<span class='lot-link' onclick=\"showLotHistory('"+String(r.lotNo||"").replace(/'/g,"\\'")+"')\">"+esc(r.lotNo)+"</span>";
+}
+function logActivity(action, r, details){
+  try{
+    activityRef.add({
+      action: action,
+      lotNo: r && r.lotNo ? r.lotNo : "",
+      karigar: r && r.karigar ? r.karigar : "",
+      details: details || "",
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+  }catch(e){console.error("Activity log error", e);}
+}
+function renderActivityLog(){
+  if(!el("activityLogBody") || !activityRef) return;
+  activityRef.orderBy("createdAt","desc").limit(50).onSnapshot(function(snap){
+    let rows=[];
+    snap.forEach(function(doc){
+      let d=doc.data()||{};
+      let time="-";
+      if(d.createdAt && d.createdAt.toDate){
+        let dt=d.createdAt.toDate();
+        time=dt.toLocaleString("en-IN");
+      }
+      rows.push("<tr><td>"+esc(time)+"</td><td>"+esc(d.action)+"</td><td style='white-space:nowrap'>"+esc(d.lotNo)+"</td><td>"+esc(d.karigar)+"</td><td>"+esc(d.details)+"</td></tr>");
+    });
+    el("activityLogBody").innerHTML=rows.join("");
+  });
+}
+function showLotHistory(lot){
+  let modal=el("lotHistoryModal"), body=el("lotHistoryBody");
+  if(!modal || !body) return;
+  let list=records.filter(r=>String(r.lotNo||"").toLowerCase()===String(lot||"").toLowerCase());
+  if(!list.length){
+    body.innerHTML="<p>No record found.</p>";
+  }else{
+    let totalSent=list.reduce((a,r)=>a+(Number(r.sentQty||r.totalQty)||0),0);
+    let totalRec=list.reduce((a,r)=>a+(Number(r.receivedQty)||0),0);
+    let totalPending=list.reduce((a,r)=>a+pendingQty(r),0);
+    body.innerHTML="<div class='summary'><div><p>Lot</p><h3 style='font-size:22px'>"+esc(lot)+"</h3></div><div><p>Sent</p><h3>"+totalSent+"</h3></div><div><p>Received</p><h3>"+totalRec+"</h3></div><div><p>Pending</p><h3>"+totalPending+"</h3></div></div>"+
+    "<table style='min-width:950px'><thead><tr><th>Date</th><th>Karigar</th><th>TC</th><th>Item</th><th>Sent</th><th>Received</th><th>Pending</th><th>Diff</th><th>EDOA</th><th>Status</th><th>Remarks</th></tr></thead><tbody>"+
+    list.map(r=>"<tr><td>"+formatDate(r.date)+"</td><td>"+esc(r.karigar)+"</td><td>"+esc(r.tcNo)+"</td><td>"+esc(r.item)+"</td><td>"+esc(r.sentQty||r.totalQty)+"</td><td>"+esc(r.receivedQty)+"</td><td>"+pendingBadge(r)+"</td><td>"+diffBadge(r.qtyDiff)+"</td><td>"+formatDate(r.edoa)+"</td><td>"+badge(r.mallReceived||'PENDING')+"</td><td>"+esc(r.remarks)+" "+esc(r.receiveRemark)+"</td></tr>").join("")+
+    "</tbody></table>";
+  }
+  modal.style.display="flex";
+}
+function hideLotHistory(){ if(el("lotHistoryModal")) el("lotHistoryModal").style.display="none"; }
+function closeLotHistory(e){ if(e.target && e.target.id==="lotHistoryModal") hideLotHistory(); }
+
+function saveEntry(e){e.preventDefault();if(!isAdmin)return alert("Client mode me entry allowed nahi hai.");let sizeObj={},total=0;sizes.forEach(s=>{sizeObj[s]=Number(el("size"+s).value)||0;total+=sizeObj[s]});let data={date:el("date").value||todayStr(),karigar:el("karigar").value,lotNo:clean(el("lotNo").value),tcNo:clean(el("tcNo").value),item:clean(el("item").value),schoolName:clean(el("schoolName").value),customerName:clean(el("customerName").value),brand:el("brand").value,material:el("material").value,outDate:el("outDate").value,edoa:el("edoa").value,status:el("status").value,sizes:sizeObj,totalQty:total,sentQty:total,photos:currentPhotos,remarks:clean(el("remarks").value),descriptions:getDescriptions(),customFields:getCustomFieldValues(),updatedAt:firebase.firestore.FieldValue.serverTimestamp()};if(!data.karigar||!data.lotNo)return alert("Karigar aur Lot No zaruri hai.");
+let duplicate = records.find(r=>r.id!==editId && String(r.lotNo||"").toLowerCase()===String(data.lotNo||"").toLowerCase() && String(r.tcNo||"").toLowerCase()===String(data.tcNo||"").toLowerCase() && String(r.karigar||"").toLowerCase()===String(data.karigar||"").toLowerCase());
+if(duplicate){
+  if(!confirm("Duplicate Warning: Same Lot + TC + Karigar already exist karta hai. Phir bhi save karna hai?")) return;
+}let task=editId?recordsRef.doc(editId).update(data):recordsRef.add(Object.assign(data,{mallReceived:"PENDING",receivedDate:"",receivedQty:0,qtyDiff:"",receiveRemark:"",createdAt:firebase.firestore.FieldValue.serverTimestamp()}));task.then(function(){logActivity(editId?"EDIT":"ADD", data, editId?"Entry edited":"New entry added");resetForm();autoPatchGoogleSheet();}).catch(err=>alert(err.message))}
+function resetForm(){el("entryForm").reset();el("date").value=todayStr();currentPhotos=["",""];["photoPreview1","photoPreview2"].forEach(id=>el(id).style.display="none");editId=null;el("formTitle").innerText="New Stitching Dispatch Entry";el("submitBtn").innerText="Add Dispatch Entry";renderDescriptions();renderCustomEntryFields();updateLiveTotal()}
+function editRecord(id){if(!isAdmin)return alert("Client mode me edit allowed nahi hai.");let r=records.find(x=>x.id===id);if(!r)return;if(isLocked(r)){alert("Ye entry locked hai. Received FULL entry ko sirf Super Admin edit kar sakta hai.");return;}editId=id;el("formTitle").innerText="Edit Dispatch Entry";el("submitBtn").innerText="Update Dispatch Entry";["date","karigar","lotNo","tcNo","item","schoolName","customerName","brand","material","outDate","edoa","status","remarks"].forEach(k=>el(k).value=r[k]||"");sizes.forEach(s=>el("size"+s).value=(r.sizes&&r.sizes[s])||"");currentPhotos=r.photos||["",""];renderDescriptions(r.descriptions||[]);renderCustomEntryFields(r.customFields||{});updateLiveTotal();window.scrollTo({top:0,behavior:"smooth"})}
+function deleteRecord(id){if(!isAdmin)return alert("Client mode me delete allowed nahi hai.");let r=records.find(x=>x.id===id);if(isLocked(r)){alert("Ye entry locked hai. Received FULL entry ko sirf Super Admin delete kar sakta hai.");return;}if(confirm("Delete this entry?")){logActivity("DELETE", r, "Entry deleted");recordsRef.doc(id).delete().then(function(){autoPatchGoogleSheet();})}}function clearAll(){if(!isAdmin)return alert("Not allowed");if(confirm("Saara data delete?")){let b=db.batch();records.forEach(r=>b.delete(recordsRef.doc(r.id)));b.commit()}}
+
+var lastReceivePopupKey = "";
+function checkReceiveLotStatus(){return;}
+
+function updateReceiveDropdown(){
+let old=el("receiveEntry").value;
+let lot=(el("receiveLotSearch")?el("receiveLotSearch").value:"").toLowerCase();
+let kar=(el("receiveKarigarFilter")?el("receiveKarigarFilter").value:"");
+el("receiveEntry").innerHTML="<option value=''>Select lot / karigar</option>";
+records.filter(r=>{
+return (!lot||String(r.lotNo||"").toLowerCase().includes(lot))&&(!kar||r.karigar===kar);
+}).forEach(r=>{
+el("receiveEntry").innerHTML+="<option value='"+r.id+"'>Lot: "+esc(r.lotNo)+" | Karigar: "+esc(r.karigar)+" | Sent: "+esc(r.sentQty||r.totalQty)+"</option>";
+});
+el("receiveEntry").value=old;
+}
+function loadReceiveEntry(){let r=records.find(x=>x.id===el("receiveEntry").value);if(!r)return;el("sentQty").value=r.sentQty||r.totalQty||0;el("receivedDate").value=r.receivedDate||todayStr();el("receivedQty").value=r.receivedQty||"";el("qtyDiff").value=r.qtyDiff||"";el("mallReceived").value=r.mallReceived||"PENDING";el("receiveRemark").value=r.receiveRemark||"";calcQtyDiff()}
+function calcQtyDiff(){let sent=Number(el("sentQty").value)||0,rec=Number(el("receivedQty").value)||0,d=rec?rec-sent:"";el("qtyDiff").value=d;el("mallReceived").value=rec?"YES":"PENDING"}
+function updateReceive(){if(!isAdmin)return alert("Client mode me receiving update allowed nahi hai.");let id=el("receiveEntry").value;if(!id)return alert("Lot ya karigar se entry select karo.");let sent=Number(el("sentQty").value)||0,rec=Number(el("receivedQty").value)||0;if(!el("receivedDate").value)return alert("Receiving date enter karo.");recordsRef.doc(id).update({mallReceived:rec?"YES":"PENDING",receivedDate:el("receivedDate").value,receivedQty:rec,qtyDiff:rec?rec-sent:"",receiveRemark:clean(el("receiveRemark").value),updatedAt:firebase.firestore.FieldValue.serverTimestamp()}).then(()=>{let rr=records.find(x=>x.id===id)||{};logActivity("RECEIVE", rr, "Receiving updated");alert("Receiving updated");autoPatchGoogleSheet()})}
+function inReportDate(r){let t=el("reportType").value;if(t==="DAY"&&el("reportDate").value)return r.date===el("reportDate").value;if(t==="MONTH"&&el("reportMonth").value)return String(r.date||"").slice(0,7)===el("reportMonth").value;if(t==="YEAR"&&el("reportYear").value)return String(r.date||"").slice(0,4)===String(el("reportYear").value);return true}
+function filteredRecords(){let q=clean(el("search").value).toLowerCase(),from=el("filterFrom").value,to=el("filterTo").value;return records.filter(r=>{let dt=descText(r.descriptions),text=[r.date,r.karigar,r.lotNo,r.tcNo,r.item,r.brand,r.material,r.status,r.mallReceived,r.outDate,r.edoa,r.receivedDate,r.remarks,r.receiveRemark,dt].join(" ").toLowerCase(),size=el("filterSize").value;return (!q||text.includes(q))&&inReportDate(r)&&(!from||r.date>=from)&&(!to||r.date<=to)&&(el("filterKarigar").value==="ALL"||r.karigar===el("filterKarigar").value)&&(!el("filterLot").value||String(r.lotNo||"").toLowerCase().includes(el("filterLot").value.toLowerCase()))&&(!el("filterTc").value||String(r.tcNo||"").toLowerCase().includes(el("filterTc").value.toLowerCase()))&&(!el("filterItem").value||String(r.item||"").toLowerCase().includes(el("filterItem").value.toLowerCase()))&&(!el("filterSchool")||!el("filterSchool").value||String(r.schoolName||"").toLowerCase().includes(el("filterSchool").value.toLowerCase()))&&(!el("filterCustomer")||!el("filterCustomer").value||String(r.customerName||"").toLowerCase().includes(el("filterCustomer").value.toLowerCase()))&&(el("filterBrand").value==="ALL"||r.brand===el("filterBrand").value)&&(el("filterMaterial").value==="ALL"||r.material===el("filterMaterial").value)&&(el("filterStatus").value==="ALL"||r.status===el("filterStatus").value)&&(el("filterReceived").value==="ALL"||r.mallReceived===el("filterReceived").value)&&(!el("filterOutDate").value||r.outDate===el("filterOutDate").value)&&(!el("filterEdoa").value||r.edoa===el("filterEdoa").value)&&(!el("filterReceivedDate").value||r.receivedDate===el("filterReceivedDate").value)&&(el("filterDesc").value==="ALL"||dt.includes(el("filterDesc").value))&&(size==="ALL"||Number(r.sizes&&r.sizes[size])>0)})}
+function inRecDate(r){let t=el("recType").value,d=r.receivedDate||"";if(t==="DAY"&&el("recDate").value)return d===el("recDate").value;if(t==="MONTH"&&el("recMonth").value)return d.slice(0,7)===el("recMonth").value;if(t==="YEAR"&&el("recYear").value)return d.slice(0,4)===String(el("recYear").value);return true}
+function receiveRecords(){let q=clean(el("recSearch").value).toLowerCase(),from=el("recFrom").value,to=el("recTo").value,dt=el("recDiffType").value;return records.filter(r=>{let d=Number(r.qtyDiff)||0,has=r.mallReceived==="YES"||r.receivedDate||Number(r.receivedQty)>0;return has&&(!q||[r.lotNo,r.karigar,r.tcNo,r.item].join(" ").toLowerCase().includes(q))&&inRecDate(r)&&(el("recKarigar").value==="ALL"||r.karigar===el("recKarigar").value)&&(!from||r.receivedDate>=from)&&(!to||r.receivedDate<=to)&&(dt==="ALL"||(dt==="SHORT"&&d<0)||(dt==="EXTRA"&&d>0)||(dt==="FULL"&&d===0))})}
+
+
+
+var lastRecSearchAlertKey = "";
+function normalizeLot(v){
+  return String(v || "").trim().toLowerCase().replace(/\s+/g,"");
+}
+function checkReceivingReportSearchAlert(force){
+  let raw = clean(el("recSearch").value);
+  let q = normalizeLot(raw);
+  if(!q || !force) return;
+
+  let found = records.find(r => normalizeLot(r.lotNo) === q);
+  if(found && (!found.mallReceived || found.mallReceived === "PENDING" || found.mallReceived === "NO" || Number(found.receivedQty || 0) === 0)){
+    alert("Item abhi tak received nahi hua hai.\nItem for this lot has not been received yet.");
+    return;
+  }
+  if(found){
+    alert("Item received ho chuka hai.\nItem for this lot has been received.");
+    return;
+  }
+  alert("Is lot ka dispatch record nahi mila.\nNo dispatch record found for this lot.");
+}
+
+
+function updateReceiveWarning(){
+  let box = el("receiveWarningBox");
+  if(!box) return;
+  let raw = clean(el("recSearch").value);
+  let q = normalizeLot(raw);
+  box.style.display = "none";
+  box.innerHTML = "";
+  if(!q) return;
+
+  let found = records.find(r => normalizeLot(r.lotNo) === q);
+  if(found && (!found.mallReceived || found.mallReceived === "PENDING" || found.mallReceived === "NO" || Number(found.receivedQty || 0) === 0)){
+    box.innerHTML = "⚠️ Item abhi tak received nahi hua hai.<br>⚠️ Item for this lot has not been received yet.<br><b>Lot:</b> " + esc(found.lotNo) + " | <b>Karigar:</b> " + esc(found.karigar) + " | <b>Sent Qty:</b> " + esc(found.sentQty || found.totalQty);
+    box.style.display = "block";
+  }
+}
+
+function renderReceiveReport(){updateReceiveWarning();let list=receiveRecords(),sent=0,rec=0,diff=0;list.forEach(r=>{sent+=Number(r.sentQty||r.totalQty)||0;rec+=Number(r.receivedQty)||0;diff+=Number(r.qtyDiff)||0});el("recEntryCount").innerText=list.length;el("recSentTotal").innerText=sent;el("recReceivedTotal").innerText=rec;el("recDiffTotal").innerText=diff;el("receiveReportBody").innerHTML=list.map(r=>"<tr><td>"+formatDate(r.receivedDate)+"</td><td>"+cleanDisplay(esc(r.karigar))+"</td><td style=\'white-space:nowrap\'>"+cleanDisplay(esc(r.lotNo))+"</td><td>"+cleanDisplay(esc(r.tcNo))+"</td><td>"+cleanDisplay(esc(r.item))+"</td><td>"+esc(r.sentQty||r.totalQty)+"</td><td>"+esc(r.receivedQty)+"</td><td>"+pendingBadge(r)+"</td><td>"+diffBadge(r.qtyDiff)+"</td><td>"+badge(r.mallReceived)+"</td><td>"+cleanDisplay(esc(r.receiveRemark))+"</td></tr>").join("")}
+
+function renderPendingAlerts(){
+  if(!el("pendingAlertBody")) return;
+  let list = records.filter(r => !(r.mallReceived === "YES" && Number(r.receivedQty || 0) > 0));
+  let late = list.filter(isLate);
+  let pendingQty = list.reduce((a,r)=>a+(Number(r.sentQty||r.totalQty)||0),0);
+  let lateQty = late.reduce((a,r)=>a+(Number(r.sentQty||r.totalQty)||0),0);
+  el("pendingLotsCount").innerText = list.length;
+  el("pendingQtyTotal").innerText = pendingQty;
+  el("lateLotsCount").innerText = late.length;
+  el("lateQtyTotal").innerText = lateQty;
+  el("pendingAlertBody").innerHTML = list.map(r=>{
+    return "<tr class='"+(isLate(r)?"late-row":"")+"'><td>"+formatDate(r.edoa)+"</td><td>"+lateBadge(r)+"</td><td>"+esc(r.karigar)+"</td><td style='white-space:nowrap'>"+esc(r.lotNo)+"</td><td>"+esc(r.tcNo)+"</td><td>"+esc(r.item)+"</td><td>"+esc(r.sentQty||r.totalQty)+"</td><td>"+badge(r.mallReceived||"PENDING")+"</td><td>"+(isAdmin?"<button class='btn-green' onclick=\"el('receiveEntry').value='"+r.id+"';loadReceiveEntry();window.scrollTo({top:0,behavior:'smooth'})\">Receive</button>":"-")+"</td></tr>";
+  }).join("");
+}
+
+
+function saveGoogleSheetLink(){
+  let link = clean(el("googleSheetLink").value);
+  if(!link){ alert("Google Sheet Web App URL paste karo."); return; }
+  if(!link.includes("script.google.com") || !link.includes("/exec")){
+    alert("Normal Google Sheet link nahi chalega. Apps Script Web App URL chahiye jo /exec par end hota hai.");
+    return;
+  }
+  localStorage.setItem("googleSheetLink", link);
+  alert("Google Sheet Web App link saved. Ab entry add/edit/receive/delete par auto sync hoga.");
+}
+function loadGoogleSheetLink(){
+  if(el("googleSheetLink")) el("googleSheetLink").value = localStorage.getItem("googleSheetLink") || "";
+}
+function setSheetSyncStatus(msg){ let box = el("sheetSyncStatus"); if(box) box.innerText = msg; }
+function getGoogleSheetLink(){ return localStorage.getItem("googleSheetLink") || (el("googleSheetLink") ? clean(el("googleSheetLink").value) : ""); }
+function buildSheetRowsFromSnapshot(snap){
+  let arr = [];
+  snap.forEach(function(doc){ let d = doc.data() || {}; d.id = doc.id; arr.push(d); });
+  return arr;
+}
+function getDescriptionTextForSheet(r){
+  return (r.descriptions || []).map(function(d){
+    return [d.heading, d.status, d.detail].filter(Boolean).join(" - ");
+  }).join("\n");
+}
+function getValueBySheetKey(r, key){
+  r = r || {};
+  if(key.indexOf("size:") === 0){ let sz = key.replace("size:", ""); return r.sizes && r.sizes[sz] ? r.sizes[sz] : ""; }
+  if(key.indexOf("custom:") === 0){ let cid = key.replace("custom:", ""); return r.customFields && r.customFields[cid] ? r.customFields[cid] : ""; }
+  if(key === "description") return getDescriptionTextForSheet(r);
+  if(key === "pendingQty") return Math.max(Number(r.sentQty || r.totalQty || 0) - Number(r.receivedQty || 0), 0);
+  let v = r[key];
+  if(v === undefined || v === null) return "";
+  if(typeof v === "object") return JSON.stringify(v);
+  return v;
+}
+function buildSheetPayload(rows){
+  rows = Array.isArray(rows) ? rows : [];
+  let cols = [], added = {};
+  function addCol(label, key, order){ if(!label || !key || added[key]) return; added[key]=true; cols.push({label:label, key:key, order:Number(order)||9999}); }
+  visibleSystemFields().forEach(function(f){ addCol(f.label || f.id, f.id, f.order); });
+  visibleCustomFields().forEach(function(f){ addCol(f.label || f.id, "custom:" + f.id, f.order); });
+  addCol("Description", "description", 880);
+  sizes.forEach(function(s){ addCol("Size " + s, "size:" + s, 1000 + Number(s)); });
+  addCol("Total Qty", "totalQty", 2000);
+  addCol("Sent Qty", "sentQty", 2010);
+  addCol("Item Received", "mallReceived", 2020);
+  addCol("Received Date", "receivedDate", 2030);
+  addCol("Received Qty", "receivedQty", 2040);
+  addCol("Pending Qty", "pendingQty", 2050);
+  addCol("Diff", "qtyDiff", 2060);
+  addCol("Receiving Remark", "receiveRemark", 2070);
+  cols.sort(function(a,b){ return a.order - b.order; });
+  let headers = cols.map(function(c){ return c.label; });
+  let values = rows.map(function(r){ return cols.map(function(c){ return getValueBySheetKey(r, c.key); }); });
+  return {type:"ALL_ENTRIES", headers:headers, rows:values};
+}
+function patchRowsToGoogleSheet(rows, autoMode){
+  let link = getGoogleSheetLink();
+  if(!link){
+    if(!autoMode) alert("Pehle Google Sheet Web App URL save karo.");
+    return Promise.resolve(false);
+  }
+
+  rows = Array.isArray(rows) ? rows : [];
+  let payload = buildSheetPayload(rows);
+
+  if(!payload.rows.length){
+    setSheetSyncStatus("Google Sheet sync stop: 0 data rows. Pehle Firebase data load hone do.");
+    if(!autoMode) alert("0 data rows mil raha hai. Page refresh karo, Sync status me entries count aane ke baad phir dabao.");
+    return Promise.resolve(false);
+  }
+
+  setSheetSyncStatus((autoMode ? "Auto syncing" : "Patching") + " Google Sheet... Rows: " + payload.rows.length + ", Columns: " + payload.headers.length);
+
+  // Apps Script Web App ke liye form-urlencoded sabse reliable hai.
+  // GS code me e.parameter.payload se ye JSON read hoga.
+  return fetch(link,{
+    method:"POST",
+    mode:"no-cors",
+    headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},
+    body:"payload=" + encodeURIComponent(JSON.stringify(payload))
+  }).then(function(){
+    setSheetSyncStatus("Google Sheet sync request sent: " + new Date().toLocaleTimeString("en-IN") + " | Rows: " + payload.rows.length + " | Columns: " + payload.headers.length);
+    if(!autoMode) alert("Google Sheet sync request bhej diya. Rows: " + payload.rows.length + ", Columns: " + payload.headers.length + ". Sheet refresh karke check karo.");
+    return true;
+  }).catch(function(err){
+    setSheetSyncStatus("Google Sheet sync failed");
+    if(!autoMode) alert("Google Sheet patch error: "+err.message);
+    console.error("Google Sheet sync error", err);
+    return false;
+  });
+}
+function sendAllEntriesToGoogleSheet(autoMode){
+  // Pehle page me loaded records use karo; yahi table me dikh raha data hai.
+  if(Array.isArray(records) && records.length){
+    return patchRowsToGoogleSheet(records.slice(), !!autoMode);
+  }
+
+  // Agar page records abhi load nahi hua, Firebase se fallback read karo.
+  return recordsRef.get().then(function(snap){
+    let rows = buildSheetRowsFromSnapshot(snap);
+    return patchRowsToGoogleSheet(rows, !!autoMode);
+  }).catch(function(err){
+    setSheetSyncStatus("Firebase read failed for Google Sheet sync");
+    if(!autoMode) alert("Firebase read error: " + err.message);
+    console.error(err);
+    return false;
+  });
+}
+function autoPatchGoogleSheet(){
+  let link = getGoogleSheetLink();
+  if(!link) return;
+  clearTimeout(window.__sheetSyncTimer);
+  window.__sheetSyncTimer = setTimeout(function(){ sendAllEntriesToGoogleSheet(true); }, 2500);
+}
+function downloadAllCSV(){
+  let b=new Blob([csvRows(records,false)],{type:"text/csv"});
+  let a=document.createElement("a");
+  a.href=URL.createObjectURL(b);
+  a.download="all-entries.csv";
+  a.click();
+}
+
+function rowHtml(r){
+  let row="<tr class='"+(isLocked(r)?"locked-row ":"")+(isLate(r)?"late-row":"")+"'><td>"+formatDate(r.date)+"</td><td>"+cleanDisplay(esc(r.karigar))+"</td><td style='white-space:nowrap'>"+lotLink(r)+"</td><td>"+cleanDisplay(esc(r.tcNo))+"</td><td>"+cleanDisplay(esc(r.item))+"</td>";
+  if(typeof r.schoolName !== "undefined" || typeof r.customerName !== "undefined"){
+    row += "<td class='school-cell'>"+cleanDisplay(esc(r.schoolName))+"</td><td class='customer-cell'>"+cleanDisplay(esc(r.customerName))+"</td>";
+  }
+  row += "<td class='desc-cell'>"+descDisplay(r.descriptions)+"</td><td>"+cleanDisplay(esc(r.brand))+"</td>"+customFieldTds(r);
+  sizes.forEach(s=>row+="<td>"+esc(r.sizes&&r.sizes[s]?r.sizes[s]:"")+"</td>");
+  row+="<td><b>"+esc(r.totalQty)+"</b></td><td>"+badge(r.material)+"</td><td>"+formatDate(r.outDate)+"</td><td>"+formatDate(r.edoa)+"</td><td>"+badge(r.status)+"</td><td>"+badge(r.mallReceived)+"</td><td>"+formatDate(r.receivedDate)+"</td><td>"+esc(r.sentQty||r.totalQty)+"</td><td>"+esc(r.receivedQty)+"</td><td>"+pendingBadge(r)+"</td><td>"+diffBadge(r.qtyDiff)+"</td><td>"+cleanDisplay(esc(r.remarks))+"</td><td>"+cleanDisplay(esc(r.receiveRemark))+"</td><td>"+photoLinks(r)+"</td><td>"+(isAdmin?(isLocked(r)?lockBadge(r):"<button class='btn-edit' onclick=\"editRecord('"+r.id+"')\">Edit</button> <button class='btn-red' onclick=\"deleteRecord('"+r.id+"')\">Delete</button>"):"-")+"</td></tr>";
+  return row;
+}
+
+function renderAllEntries(){
+  if(!el("allTableBody")) return;
+
+  if(el("allTableHead") && el("tableHead")){
+    el("allTableHead").innerHTML = el("tableHead").innerHTML;
+  }
+
+  el("allEmptyMsg").style.display = records.length ? "none" : "block";
+  el("allTableBody").innerHTML = records.map(function(r){
+    return rowHtml(r);
+  }).join("");
+
+  if(el("allMobileList")){
+    el("allMobileList").innerHTML = records.map(function(r){
+      return "<div class='mobile-card'><b>"+esc(r.lotNo)+"</b> - "+esc(r.karigar)+"<br>Sent: "+esc(r.sentQty||r.totalQty)+" Received: "+esc(r.receivedQty)+" Diff: "+diffBadge(r.qtyDiff)+"<br>"+(isAdmin?(isLocked(r)?lockBadge(r):"<button class='btn-edit' onclick=\"editRecord('"+r.id+"')\">Edit</button> <button class='btn-red' onclick=\"deleteRecord('"+r.id+"')\">Delete</button>"):"")+"</div>";
+    }).join("");
+  }
+}
+
+function downloadAllCSV(){
+  let b=new Blob([csvRows(records,false)],{type:"text/csv"});
+  let a=document.createElement("a");
+  a.href=URL.createObjectURL(b);
+  a.download="all-entries.csv";
+  a.click();
+}
+function reportRowHtml(r){
+  let row="<tr class='"+(isLate(r)?"late-row":"")+"'><td>"+formatDate(r.date)+"</td><td>"+cleanDisplay(esc(r.karigar))+"</td><td style='white-space:nowrap'>"+lotLink(r)+"</td><td>"+cleanDisplay(esc(r.tcNo))+"</td><td>"+cleanDisplay(esc(r.item))+"</td>";
+  if(el("allTableHead") || true){
+    row += "<td class='school-cell'>"+cleanDisplay(esc(r.schoolName))+"</td><td class='customer-cell'>"+cleanDisplay(esc(r.customerName))+"</td>";
+  }
+  row += "<td class='desc-cell'>"+descDisplay(r.descriptions)+"</td><td>"+cleanDisplay(esc(r.brand))+"</td>"+customFieldTds(r);
+  sizes.forEach(s=>row+="<td>"+esc(r.sizes&&r.sizes[s]?r.sizes[s]:"")+"</td>");
+  row+="<td><b>"+esc(r.totalQty)+"</b></td><td>"+badge(r.material)+"</td><td>"+formatDate(r.outDate)+"</td><td>"+formatDate(r.edoa)+"</td><td>"+badge(r.status)+"</td><td>"+badge(r.mallReceived)+"</td><td>"+formatDate(r.receivedDate)+"</td><td>"+esc(r.sentQty||r.totalQty)+"</td><td>"+esc(r.receivedQty)+"</td><td>"+pendingBadge(r)+"</td><td>"+diffBadge(r.qtyDiff)+"</td><td>"+cleanDisplay(esc(r.remarks))+"</td><td>"+cleanDisplay(esc(r.receiveRemark))+"</td><td>"+photoLinks(r)+"</td><td>-</td></tr>";
+  return row;
+}
+
+
+function render(){
+  if(!el("tableBody")) return;
+
+  let list = filteredRecords();
+  let total = records.reduce((a,r)=>a+(Number(r.totalQty)||0),0);
+  let out = records.filter(r=>r.status==="OUT").reduce((a,r)=>a+(Number(r.totalQty)||0),0);
+  let hold = records.filter(r=>r.status==="HOLD").reduce((a,r)=>a+(Number(r.totalQty)||0),0);
+
+  el("totalEntries").innerText = records.length;
+  el("grandTotal").innerText = total;
+  el("outQty").innerText = out;
+  el("holdQty").innerText = hold;
+
+  el("emptyMsg").style.display = list.length ? "none" : "block";
+
+  // Filtered Report: filter ke hisab se data, lekin edit/delete nahi.
+  el("tableBody").innerHTML = list.map(function(r){
+    return reportRowHtml(r);
+  }).join("");
+
+  el("mobileList").innerHTML = list.map(function(r){
+    return "<div class='mobile-card'><b>"+esc(r.lotNo)+"</b> - "+esc(r.karigar)+"<br>Sent: "+esc(r.sentQty||r.totalQty)+" Received: "+esc(r.receivedQty)+" Diff: "+diffBadge(r.qtyDiff)+"<br><b>Report only</b></div>";
+  }).join("");
+
+  renderReceiveReport();
+  renderPendingAlerts();
+  renderAllEntries();
+}
+
+function photoLinks(r){
+let p=r.photos||[],a=[];
+if(p[0])a.push("<span style='color:#2563eb;cursor:pointer' onclick=\"openPhoto('"+p[0]+"')\">Photo 1</span>");
+if(p[1])a.push("<span style='color:#2563eb;cursor:pointer' onclick=\"openPhoto('"+p[1]+"')\">Photo 2</span>");
+return a.join(" | ")||"-";
+}
+function csvRows(list,receiveOnly){
+  let customHeads=visibleCustomFields().map(f=>f.label);
+  let head=receiveOnly?["Receive Date","Karigar","Lot","TC","Item","Sent Qty","Received Qty","Diff","Status","Remark"]:["Date","Karigar","Lot","TC","Item","Description","Brand"].concat(customHeads).concat(["Total","Material","Out Date","EDOA","Status","Item Received","Received Date","Sent Qty","Received Qty","Diff","Dispatch Remarks","Receiving Remark"]);
+  let rows=[head].concat(list.map(function(r){
+    if(receiveOnly) return [r.receivedDate,r.karigar,r.lotNo,r.tcNo,r.item,r.sentQty||r.totalQty,r.receivedQty,r.qtyDiff,r.mallReceived,r.receiveRemark];
+    let customVals=visibleCustomFields().map(f=>(r.customFields&&r.customFields[f.id])||"");
+    return [r.date,r.karigar,r.lotNo,r.tcNo,r.item,descText(r.descriptions),r.brand].concat(customVals).concat([r.totalQty,r.material,r.outDate,r.edoa,r.status,r.mallReceived,r.receivedDate,r.sentQty||r.totalQty,r.receivedQty,r.qtyDiff,r.remarks,r.receiveRemark]);
+  }));
+  PLACEHOLDER
+}
+function downloadCSV(){let b=new Blob([csvRows(filteredRecords(),false)],{type:"text/csv"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="stitching-full-report.csv";a.click()}function downloadReceiveCSV(){let b=new Blob([csvRows(receiveRecords(),true)],{type:"text/csv"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="receiving-short-extra-report.csv";a.click()}
+function shareAllReport(){let l=filteredRecords();let msg="DISPATCH REPORT\nEntries: "+l.length+"\nQty: "+l.reduce((a,r)=>a+(Number(r.totalQty)||0),0);if(navigator.share)navigator.share({text:msg});else navigator.clipboard.writeText(msg)}
+function shareReceiveReport(){let l=receiveRecords(),sent=0,rec=0,diff=0;l.forEach(r=>{sent+=Number(r.sentQty||r.totalQty)||0;rec+=Number(r.receivedQty)||0;diff+=Number(r.qtyDiff)||0});let msg="RECEIVING REPORT\nEntries: "+l.length+"\nSent: "+sent+"\nReceived: "+rec+"\nNet Difference: "+diff;if(navigator.share)navigator.share({text:msg});else navigator.clipboard.writeText(msg)}
+function resetFilters(){["search","reportDate","reportMonth","reportYear","filterFrom","filterTo","filterLot","filterTc","filterItem","filterSchool","filterCustomer","filterOutDate","filterEdoa","filterReceivedDate"].forEach(id=>{if(el(id))el(id).value=""});["reportType","filterKarigar","filterBrand","filterMaterial","filterStatus","filterReceived","filterDesc","filterSize"].forEach(id=>el(id).value="ALL");render()}function resetReceiveFilters(){["recSearch","recDate","recMonth","recYear","recFrom","recTo"].forEach(id=>el(id).value="");["recType","recKarigar","recDiffType"].forEach(id=>el(id).value="ALL");render()}
+window.addEventListener("load",init);
+</script>
+</body>
+</html>
